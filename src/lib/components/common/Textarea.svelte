@@ -49,6 +49,7 @@
 	};
 </script>
 
+<div class="snes-input w-full h-full">
 <textarea
 	bind:this={textareaElement}
 	bind:value
@@ -68,3 +69,4 @@
 	}}
 	on:blur={onBlur}
 />
+</div>

@@ -20,7 +20,7 @@
 <div class="flex items-center mb-1.5 pt-1.5">
 	<div class=" mr-1 flex items-center">
 		<button
-			class="p-0.5 bg-transparent transition rounded-lg"
+			class="p-0.5 bg-transparent transition rounded-lg snes-button"
 			on:click={() => {
 				show = !show;
 			}}

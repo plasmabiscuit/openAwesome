@@ -97,7 +97,7 @@
 						{#if selectedGroup[id]}
 							<button
 								type="button"
-								class="inline-flex items-center space-x-1 px-2 py-1 bg-gray-100/50 dark:bg-gray-850 rounded-lg text-xs"
+								class="inline-flex items-center space-x-1 px-2 py-1 bg-gray-100/50 dark:bg-gray-850 rounded-lg text-xs snes-button"
 								on:click={() => {
 									groupIds = groupIds.filter((gid) => gid !== id);
 									delete selectedGroup[id];
@@ -129,7 +129,7 @@
 						{#if selectedUsers[id]}
 							<button
 								type="button"
-								class="inline-flex items-center space-x-1 px-2 py-1 bg-gray-100/50 dark:bg-gray-850 rounded-lg text-xs"
+								class="inline-flex items-center space-x-1 px-2 py-1 bg-gray-100/50 dark:bg-gray-850 rounded-lg text-xs snes-button"
 								on:click={() => {
 									userIds = userIds.filter((uid) => uid !== id);
 									delete selectedUsers[id];
@@ -187,7 +187,7 @@
 							<div class="mb-3">
 								{#each filteredGroups as group, groupIdx (group.id)}
 									<button
-										class=" dark:border-gray-850 text-xs flex items-center justify-between w-full"
+										class=" dark:border-gray-850 text-xs flex items-center justify-between w-full snes-button"
 										type="button"
 										on:click={() => {
 											if ((groupIds ?? []).includes(group.id)) {
@@ -229,7 +229,7 @@
 							{#each users as user, userIdx (user.id)}
 								{#if user?.id !== $_user?.id}
 									<button
-										class=" dark:border-gray-850 text-xs flex items-center justify-between w-full"
+										class=" dark:border-gray-850 text-xs flex items-center justify-between w-full snes-button"
 										type="button"
 										on:click={() => {
 											if ((userIds ?? []).includes(user.id)) {

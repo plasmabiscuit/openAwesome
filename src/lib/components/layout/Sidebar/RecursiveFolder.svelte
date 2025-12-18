@@ -517,7 +517,7 @@
 				}}
 			>
 				<button
-					class="text-gray-500 dark:text-gray-500 transition-all p-1 hover:bg-gray-200 dark:hover:bg-gray-850 rounded-lg"
+					class="text-gray-500 dark:text-gray-500 transition-all p-1 hover:bg-gray-200 dark:hover:bg-gray-850 rounded-lg snes-button"
 					on:click={(e) => {
 						e.stopPropagation();
 						e.stopImmediatePropagation();
@@ -581,7 +581,7 @@
 				</div>
 
 				<button
-					class="absolute z-10 right-2 invisible group-hover:visible self-center flex items-center dark:text-gray-300"
+					class="absolute z-10 right-2 invisible group-hover:visible self-center flex items-center dark:text-gray-300 snes-button"
 				>
 					<FolderMenu
 						onEdit={() => {

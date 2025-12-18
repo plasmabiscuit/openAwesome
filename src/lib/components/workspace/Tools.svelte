@@ -234,7 +234,7 @@
 			<div class="flex w-full justify-end gap-1.5">
 				{#if $user?.role === 'admin' || $user?.permissions?.workspace?.tools_import}
 					<button
-						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition"
+						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition snes-button"
 						on:click={() => {
 							toolsImportInputElement.click();
 						}}
@@ -247,7 +247,7 @@
 
 				{#if tools.length && ($user?.role === 'admin' || $user?.permissions?.workspace?.tools_export)}
 					<button
-						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition"
+						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition snes-button"
 						on:click={async () => {
 							const _tools = await exportTools(localStorage.token).catch((error) => {
 								toast.error(`${error}`);
@@ -316,7 +316,7 @@
 				{#if query}
 					<div class="self-center pl-1.5 translate-y-[0.5px] rounded-l-xl bg-transparent">
 						<button
-							class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+							class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition snes-button"
 							on:click={() => {
 								query = '';
 							}}
@@ -400,7 +400,7 @@
 								{#if shiftKey}
 									<Tooltip content={$i18n.t('Delete')}>
 										<button
-											class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+											class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 											type="button"
 											on:click={() => {
 												deleteHandler(tool);
@@ -413,7 +413,7 @@
 									{#if tool?.meta?.manifest?.funding_url ?? false}
 										<Tooltip content="Support">
 											<button
-												class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+												class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 												type="button"
 												on:click={() => {
 													selectedTool = tool;
@@ -427,7 +427,7 @@
 
 									<Tooltip content={$i18n.t('Valves')}>
 										<button
-											class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+											class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 											type="button"
 											on:click={() => {
 												selectedTool = tool;
@@ -476,7 +476,7 @@
 										onClose={() => {}}
 									>
 										<button
-											class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+											class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 											type="button"
 										>
 											<EllipsisHorizontal className="size-5" />

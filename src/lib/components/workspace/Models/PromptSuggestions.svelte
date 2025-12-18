@@ -75,7 +75,7 @@
 			/>
 
 			<button
-				class="flex text-xs items-center space-x-1 py-1 rounded-xl bg-transparent dark:text-gray-200 transition"
+				class="flex text-xs items-center space-x-1 py-1 rounded-xl bg-transparent dark:text-gray-200 transition snes-button"
 				type="button"
 				on:click={() => {
 					const input = document.getElementById('prompt-suggestions-import-input');
@@ -91,7 +91,7 @@
 
 			{#if promptSuggestions.length}
 				<button
-					class="flex text-xs items-center space-x-1 py-1 rounded-xl bg-transparent dark:text-gray-200 transition"
+					class="flex text-xs items-center space-x-1 py-1 rounded-xl bg-transparent dark:text-gray-200 transition snes-button"
 					type="button"
 					on:click={async () => {
 						let blob = new Blob([JSON.stringify(promptSuggestions)], {
@@ -107,7 +107,7 @@
 			{/if}
 
 			<button
-				class=" px-1.5 rounded-xl transition font-medium text-sm flex items-center"
+				class=" px-1.5 rounded-xl transition font-medium text-sm flex items-center snes-button"
 				type="button"
 				on:click={() => {
 					if (promptSuggestions.length === 0 || promptSuggestions.at(-1).content !== '') {
@@ -160,7 +160,7 @@
 					</div>
 
 					<button
-						class="p-1 self-start"
+						class="p-1 self-start snes-button"
 						type="button"
 						on:click={() => {
 							promptSuggestions.splice(promptIdx, 1);

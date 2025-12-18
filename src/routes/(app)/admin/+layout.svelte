@@ -42,7 +42,7 @@
 						>
 							<button
 								id="sidebar-toggle-button"
-								class=" cursor-pointer flex rounded-lg hover:bg-gray-100 dark:hover:bg-gray-850 transition cursor-"
+								class=" cursor-pointer flex rounded-lg hover:bg-gray-100 dark:hover:bg-gray-850 transition cursor- snes-button"
 								on:click={() => {
 									showSidebar.set(!$showSidebar);
 								}}

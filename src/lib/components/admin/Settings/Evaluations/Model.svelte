@@ -51,7 +51,7 @@
 
 		<div class="flex items-center">
 			<button
-				class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+				class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 				type="button"
 				on:click={() => {
 					showModel = true;

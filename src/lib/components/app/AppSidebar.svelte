@@ -16,7 +16,7 @@
 
 		<Tooltip content="Home" placement="right">
 			<button
-				class=" cursor-pointer {selected === 'home' ? 'rounded-2xl' : 'rounded-full'}"
+				class=" cursor-pointer {selected === 'home' ? 'rounded-2xl' : 'rounded-full'} snes-button"
 				on:click={() => {
 					selected = 'home';
 
@@ -44,7 +44,7 @@
 			</div>
 		{/if}
 		<button
-			class=" cursor-pointer bg-transparent"
+			class=" cursor-pointer bg-transparent snes-button"
 			on:click={() => {
 				selected = '';
 			}}

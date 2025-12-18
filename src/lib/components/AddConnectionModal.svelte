@@ -245,7 +245,7 @@
 				{/if}
 			</h1>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				aria-label={$i18n.t('Close modal')}
 				on:click={() => {
 					show = false;
@@ -276,7 +276,7 @@
 												connectionType = connectionType === 'local' ? 'external' : 'local';
 											}}
 											type="button"
-											class=" text-xs text-gray-700 dark:text-gray-300"
+											class=" text-xs text-gray-700 dark:text-gray-300 snes-button"
 										>
 											{#if connectionType === 'local'}
 												{$i18n.t('Local')}
@@ -313,7 +313,7 @@
 
 							<Tooltip content={$i18n.t('Verify Connection')} className="self-end -mb-1">
 								<button
-									class="self-center p-1 bg-transparent hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 rounded-lg transition"
+									class="self-center p-1 bg-transparent hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 rounded-lg transition snes-button"
 									on:click={() => {
 										verifyHandler();
 									}}
@@ -485,7 +485,7 @@
 											azure = !azure;
 										}}
 										type="button"
-										class=" text-xs text-gray-700 dark:text-gray-300"
+										class=" text-xs text-gray-700 dark:text-gray-300 snes-button"
 									>
 										{azure ? $i18n.t('Azure OpenAI') : $i18n.t('OpenAI')}
 									</button>
@@ -543,7 +543,7 @@
 													type="button"
 													on:click={() => {
 														modelIds = modelIds.filter((_, idx) => idx !== modelIdx);
-													}}
+													}} class="snes-button"
 												>
 													<Minus strokeWidth="2" className="size-3.5" />
 												</button>
@@ -593,7 +593,7 @@
 									aria-label={$i18n.t('Add')}
 									on:click={() => {
 										addModelHandler();
-									}}
+									}} class="snes-button"
 								>
 									<Plus className="size-3.5" strokeWidth="2" />
 								</button>
@@ -632,7 +632,7 @@
 					<div class="flex justify-end pt-3 text-sm font-medium gap-1.5">
 						{#if edit}
 							<button
-								class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-900 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center"
+								class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-900 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center snes-button"
 								type="button"
 								on:click={() => {
 									onDelete();
@@ -646,7 +646,7 @@
 						<button
 							class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center {loading
 								? ' cursor-not-allowed'
-								: ''}"
+								: ''} snes-button"
 							type="submit"
 							disabled={loading}
 						>

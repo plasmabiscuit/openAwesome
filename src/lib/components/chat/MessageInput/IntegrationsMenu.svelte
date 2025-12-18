@@ -117,7 +117,7 @@
 					{#if tools}
 						{#if Object.keys(tools).length > 0}
 							<button
-								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 								on:click={() => {
 									tab = 'tools';
 								}}
@@ -146,7 +146,7 @@
 						{#each toggleFilters.sort( (a, b) => a.name.localeCompare( b.name, undefined, { sensitivity: 'base' } ) ) as filter, filterIdx (filter.id)}
 							<Tooltip content={filter?.description} placement="top-start">
 								<button
-									class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+									class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 									on:click={() => {
 										if (selectedFilterIds.includes(filter.id)) {
 											selectedFilterIds = selectedFilterIds.filter((id) => id !== filter.id);
@@ -182,7 +182,7 @@
 										<div class=" shrink-0">
 											<Tooltip content={$i18n.t('Valves')}>
 												<button
-													class="self-center w-fit text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition rounded-full"
+													class="self-center w-fit text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition rounded-full snes-button"
 													type="button"
 													on:click={(e) => {
 														e.stopPropagation();
@@ -216,7 +216,7 @@
 					{#if showWebSearchButton}
 						<Tooltip content={$i18n.t('Search the internet')} placement="top-start">
 							<button
-								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 								on:click={() => {
 									webSearchEnabled = !webSearchEnabled;
 								}}
@@ -247,7 +247,7 @@
 					{#if showImageGenerationButton}
 						<Tooltip content={$i18n.t('Generate an image')} placement="top-start">
 							<button
-								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 								on:click={() => {
 									imageGenerationEnabled = !imageGenerationEnabled;
 								}}
@@ -278,7 +278,7 @@
 					{#if showCodeInterpreterButton}
 						<Tooltip content={$i18n.t('Execute code for analysis')} placement="top-start">
 							<button
-								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+								class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 								aria-pressed={codeInterpreterEnabled}
 								aria-label={codeInterpreterEnabled
 									? $i18n.t('Disable Code Interpreter')
@@ -313,7 +313,7 @@
 			{:else if tab === 'tools' && tools}
 				<div in:fly={{ x: 20, duration: 150 }}>
 					<button
-						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 						on:click={() => {
 							tab = '';
 						}}
@@ -330,7 +330,7 @@
 
 					{#each Object.keys(tools) as toolId}
 						<button
-							class="relative flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+							class="relative flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 							on:click={async (e) => {
 								if (!(tools[toolId]?.authenticated ?? true)) {
 									e.preventDefault();
@@ -375,7 +375,7 @@
 								<div class=" shrink-0">
 									<Tooltip content={$i18n.t('Valves')}>
 										<button
-											class="self-center w-fit text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition rounded-full"
+											class="self-center w-fit text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition rounded-full snes-button"
 											type="button"
 											on:click={(e) => {
 												e.stopPropagation();

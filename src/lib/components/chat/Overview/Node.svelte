@@ -55,7 +55,7 @@
 						</div>
 
 						<button
-							class={data?.message?.favorite ? '' : 'invisible group-hover:visible'}
+							class="{data?.message?.favorite ? '' : 'invisible group-hover:visible'} snes-button"
 							on:click={() => {
 								data.message.favorite = !(data?.message?.favorite ?? false);
 							}}

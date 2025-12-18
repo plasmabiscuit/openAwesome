@@ -334,7 +334,7 @@
 			<div class="flex w-full justify-end gap-1.5">
 				{#if $user?.role === 'admin' || $user?.permissions?.workspace?.models_import}
 					<button
-						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition"
+						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition snes-button"
 						on:click={() => {
 							modelsImportInputElement.click();
 						}}
@@ -347,7 +347,7 @@
 
 				{#if total && ($user?.role === 'admin' || $user?.permissions?.workspace?.models_export)}
 					<button
-						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition"
+						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition snes-button"
 						on:click={async () => {
 							downloadModels(models);
 						}}
@@ -386,7 +386,7 @@
 				{#if query}
 					<div class="self-center pl-1.5 translate-y-[0.5px] rounded-l-xl bg-transparent">
 						<button
-							class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+							class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition snes-button"
 							on:click={() => {
 								query = '';
 							}}
@@ -490,7 +490,7 @@
 																	content={model?.meta?.hidden ? $i18n.t('Show') : $i18n.t('Hide')}
 																>
 																	<button
-																		class="self-center w-fit text-sm p-1.5 dark:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+																		class="self-center w-fit text-sm p-1.5 dark:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 																		type="button"
 																		on:click={(e) => {
 																			e.stopPropagation();
@@ -507,7 +507,7 @@
 
 																<Tooltip content={$i18n.t('Delete')}>
 																	<button
-																		class="self-center w-fit text-sm p-1.5 dark:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+																		class="self-center w-fit text-sm p-1.5 dark:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 																		type="button"
 																		on:click={(e) => {
 																			e.stopPropagation();
@@ -561,7 +561,7 @@
 												<button
 													on:click={(e) => {
 														e.stopPropagation();
-													}}
+													}} class="snes-button"
 												>
 													<Tooltip
 														content={model.is_active ? $i18n.t('Enabled') : $i18n.t('Disabled')}

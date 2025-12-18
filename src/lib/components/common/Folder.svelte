@@ -152,7 +152,7 @@
 					id="sidebar-folder-button"
 					class=" w-full group rounded-xl relative flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-900 transition {buttonClassName}"
 				>
-					<button class="w-full py-1.5 pl-2 flex items-center gap-1.5 text-xs font-medium">
+					<button class="w-full py-1.5 pl-2 flex items-center gap-1.5 text-xs font-medium snes-button">
 						{#if chevron}
 							<div class=" p-[1px]">
 								{#if open}
@@ -170,7 +170,7 @@
 
 					{#if onAdd}
 						<button
-							class="absolute z-10 right-2 invisible group-hover:visible self-center flex items-center dark:text-gray-300"
+							class="absolute z-10 right-2 invisible group-hover:visible self-center flex items-center dark:text-gray-300 snes-button"
 							on:pointerup={(e) => {
 								e.stopPropagation();
 							}}
@@ -181,7 +181,7 @@
 						>
 							<Tooltip content={onAddLabel}>
 								<button
-									class="p-0.5 dark:hover:bg-gray-850 rounded-lg touch-auto"
+									class="p-0.5 dark:hover:bg-gray-850 rounded-lg touch-auto snes-button"
 									on:click={(e) => {}}
 								>
 									<Plus className=" size-3" strokeWidth="2.5" />

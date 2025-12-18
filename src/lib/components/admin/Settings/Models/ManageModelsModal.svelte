@@ -44,7 +44,7 @@
 				{$i18n.t('Manage Models')}
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -69,7 +69,7 @@
 							<button
 								class="min-w-fit p-1.5 {selected === 'ollama'
 									? ''
-									: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
+									: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition snes-button"
 								on:click={() => {
 									selected = 'ollama';
 								}}>{$i18n.t('Ollama')}</button

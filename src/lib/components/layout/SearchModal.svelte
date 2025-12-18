@@ -306,7 +306,7 @@
 						class=" w-full flex items-center rounded-xl text-sm py-2 px-3 hover:bg-gray-50 dark:hover:bg-gray-850 {selectedIdx ===
 						idx
 							? 'bg-gray-50 dark:bg-gray-850'
-							: ''}"
+							: ''} snes-button"
 						data-arrow-selected={selectedIdx === idx ? 'true' : undefined}
 						dragabble="false"
 						on:mouseenter={() => {

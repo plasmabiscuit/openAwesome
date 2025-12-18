@@ -229,7 +229,7 @@
 							<button
 								class="flex gap-2 w-full items-center px-3 py-1.5 text-sm cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/50 rounded-xl {!fileUploadEnabled
 									? 'opacity-50'
-									: ''}"
+									: ''} snes-button"
 								on:click={() => {
 									tab = 'notes';
 								}}
@@ -261,7 +261,7 @@
 							<button
 								class="flex gap-2 w-full items-center px-3 py-1.5 text-sm cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/50 rounded-xl {!fileUploadEnabled
 									? 'opacity-50'
-									: ''}"
+									: ''} snes-button"
 								on:click={() => {
 									tab = 'knowledge';
 								}}
@@ -293,7 +293,7 @@
 							<button
 								class="flex gap-2 w-full items-center px-3 py-1.5 text-sm cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/50 rounded-xl {!fileUploadEnabled
 									? 'opacity-50'
-									: ''}"
+									: ''} snes-button"
 								on:click={() => {
 									tab = 'chats';
 								}}
@@ -355,7 +355,7 @@
 							<button
 								class="flex gap-2 w-full items-center px-3 py-1.5 text-sm cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/50 rounded-xl {!fileUploadEnabled
 									? 'opacity-50'
-									: ''}"
+									: ''} snes-button"
 								on:click={() => {
 									tab = 'microsoft_onedrive';
 								}}
@@ -462,7 +462,7 @@
 			{:else if tab === 'knowledge'}
 				<div in:fly={{ x: 20, duration: 150 }}>
 					<button
-						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 						on:click={() => {
 							tab = '';
 						}}
@@ -481,7 +481,7 @@
 			{:else if tab === 'notes'}
 				<div in:fly={{ x: 20, duration: 150 }}>
 					<button
-						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 						on:click={() => {
 							tab = '';
 						}}
@@ -500,7 +500,7 @@
 			{:else if tab === 'chats'}
 				<div in:fly={{ x: 20, duration: 150 }}>
 					<button
-						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 						on:click={() => {
 							tab = '';
 						}}
@@ -519,7 +519,7 @@
 			{:else if tab === 'microsoft_onedrive'}
 				<div in:fly={{ x: 20, duration: 150 }}>
 					<button
-						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50"
+						class="flex w-full justify-between gap-2 items-center px-3 py-1.5 text-sm cursor-pointer rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800/50 snes-button"
 						on:click={() => {
 							tab = '';
 						}}

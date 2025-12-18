@@ -107,7 +107,7 @@
 
 			<div class=" flex flex-col w-full px-2.5 items-center">
 				<button
-					class="w-full text-left px-3 py-1.5 rounded-xl border border-gray-100/50 dark:border-gray-800/50 hover:bg-gray-50 dark:hover:bg-gray-850 transition flex items-center gap-2 text-sm"
+					class="w-full text-left px-3 py-1.5 rounded-xl border border-gray-100/50 dark:border-gray-800/50 hover:bg-gray-50 dark:hover:bg-gray-850 transition flex items-center gap-2 text-sm snes-button"
 					type="button"
 					on:click={() => {
 						directMessageHandler();

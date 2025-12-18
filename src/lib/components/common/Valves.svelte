@@ -23,7 +23,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition"
+					class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 					type="button"
 					on:click={() => {
 						const propertySpec = valvesSpec.properties[property] ?? {};

@@ -52,7 +52,7 @@
 <button
 	class="relative group p-1.5 {className} flex items-center gap-1 {colorClassName} {small
 		? 'rounded-xl p-2'
-		: 'rounded-2xl'} text-left"
+		: 'rounded-2xl'} text-left snes-button"
 	type="button"
 	on:click={async () => {
 		if (item?.file?.data?.content || item?.type === 'file' || modal) {
@@ -177,7 +177,7 @@
 				class=" bg-white text-black border border-gray-50 rounded-full {($settings?.highContrastMode ??
 				false)
 					? ''
-					: 'outline-hidden focus:outline-hidden group-hover:visible invisible transition'}"
+					: 'outline-hidden focus:outline-hidden group-hover:visible invisible transition'} snes-button"
 				type="button"
 				on:click|stopPropagation={() => {
 					dispatch('dismiss');

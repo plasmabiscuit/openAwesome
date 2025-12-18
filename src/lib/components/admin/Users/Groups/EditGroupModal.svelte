@@ -154,7 +154,7 @@
 				{/if}
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -182,7 +182,7 @@
 									class="px-0.5 py-1 max-w-fit w-fit rounded-lg flex-1 lg:flex-none flex text-right transition {selectedTab ===
 									'general'
 										? ''
-										: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+										: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} snes-button"
 									on:click={() => {
 										selectedTab = 'general';
 									}}
@@ -211,7 +211,7 @@
 									class="px-0.5 py-1 max-w-fit w-fit rounded-lg flex-1 lg:flex-none flex text-right transition {selectedTab ===
 									'permissions'
 										? ''
-										: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+										: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} snes-button"
 									on:click={() => {
 										selectedTab = 'permissions';
 									}}
@@ -229,7 +229,7 @@
 									class="px-0.5 py-1 max-w-fit w-fit rounded-lg flex-1 lg:flex-none flex text-right transition {selectedTab ===
 									'users'
 										? ''
-										: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+										: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} snes-button"
 									on:click={() => {
 										selectedTab = 'users';
 									}}
@@ -267,7 +267,7 @@
 									<button
 										class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center {loading
 											? ' cursor-not-allowed'
-											: ''}"
+											: ''} snes-button"
 										type="submit"
 										disabled={loading}
 									>

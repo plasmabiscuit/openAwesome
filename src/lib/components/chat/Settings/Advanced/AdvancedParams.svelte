@@ -67,7 +67,7 @@
 					{$i18n.t('Stream Chat Response')}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition"
+					class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 					on:click={() => {
 						params.stream_response =
 							(params?.stream_response ?? null) === null
@@ -104,7 +104,7 @@
 						{$i18n.t('Stream Delta Chunk Size')}
 					</div>
 					<button
-						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 						type="button"
 						on:click={() => {
 							params.stream_delta_chunk_size =
@@ -160,7 +160,7 @@
 					{$i18n.t('Function Calling')}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition"
+					class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 					on:click={() => {
 						params.function_calling = (params?.function_calling ?? null) === null ? 'native' : null;
 					}}
@@ -189,7 +189,7 @@
 					{$i18n.t('Reasoning Tags')}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						if ((params?.reasoning_tags ?? null) === null) {
@@ -255,7 +255,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.seed = (params?.seed ?? null) === null ? 0 : null;
@@ -300,7 +300,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.stop = (params?.stop ?? null) === null ? '' : null;
@@ -343,7 +343,7 @@
 					{$i18n.t('Temperature')}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.temperature = (params?.temperature ?? null) === null ? 0.8 : null;
@@ -398,7 +398,7 @@
 					{$i18n.t('Reasoning Effort')}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.reasoning_effort = (params?.reasoning_effort ?? null) === null ? 'medium' : null;
@@ -441,7 +441,7 @@
 					{'logit_bias'}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.logit_bias = (params?.logit_bias ?? null) === null ? '' : null;
@@ -487,7 +487,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.max_tokens = (params?.max_tokens ?? null) === null ? 128 : null;
@@ -541,7 +541,7 @@
 					{'top_k'}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.top_k = (params?.top_k ?? null) === null ? 40 : null;
@@ -597,7 +597,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.top_p = (params?.top_p ?? null) === null ? 0.9 : null;
@@ -652,7 +652,7 @@
 					{'min_p'}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.min_p = (params?.min_p ?? null) === null ? 0.0 : null;
@@ -708,7 +708,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.frequency_penalty = (params?.frequency_penalty ?? null) === null ? 1.1 : null;
@@ -764,7 +764,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded transition flex-shrink-0 outline-none"
+					class="p-1 px-3 text-xs flex rounded transition flex-shrink-0 outline-none snes-button"
 					type="button"
 					on:click={() => {
 						params.presence_penalty = (params?.presence_penalty ?? null) === null ? 0.0 : null;
@@ -817,7 +817,7 @@
 					{'mirostat'}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.mirostat = (params?.mirostat ?? null) === null ? 0 : null;
@@ -872,7 +872,7 @@
 					{'mirostat_eta'}
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.mirostat_eta = (params?.mirostat_eta ?? null) === null ? 0.1 : null;
@@ -928,7 +928,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.mirostat_tau = (params?.mirostat_tau ?? null) === null ? 5.0 : null;
@@ -982,7 +982,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.repeat_last_n = (params?.repeat_last_n ?? null) === null ? 64 : null;
@@ -1038,7 +1038,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.tfs_z = (params?.tfs_z ?? null) === null ? 1 : null;
@@ -1094,7 +1094,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded transition flex-shrink-0 outline-none"
+					class="p-1 px-3 text-xs flex rounded transition flex-shrink-0 outline-none snes-button"
 					type="button"
 					on:click={() => {
 						params.repeat_penalty = (params?.repeat_penalty ?? null) === null ? 1.1 : null;
@@ -1150,7 +1150,7 @@
 						{'use_mmap'}
 					</div>
 					<button
-						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 						type="button"
 						on:click={() => {
 							params.use_mmap = (params?.use_mmap ?? null) === null ? true : null;
@@ -1191,7 +1191,7 @@
 					</div>
 
 					<button
-						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 						type="button"
 						on:click={() => {
 							params.use_mlock = (params?.use_mlock ?? null) === null ? true : null;
@@ -1233,7 +1233,7 @@
 					{'think'} ({$i18n.t('Ollama')})
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition"
+					class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 					on:click={() => {
 						params.think = (params?.think ?? null) === null ? true : params.think ? false : null;
 					}}
@@ -1262,7 +1262,7 @@
 					{'format'} ({$i18n.t('Ollama')})
 				</div>
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition"
+					class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 					on:click={() => {
 						params.format = (params?.format ?? null) === null ? 'json' : null;
 					}}
@@ -1302,7 +1302,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.num_keep = (params?.num_keep ?? null) === null ? 24 : null;
@@ -1355,7 +1355,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.num_ctx = (params?.num_ctx ?? null) === null ? 2048 : null;
@@ -1410,7 +1410,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+					class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 					type="button"
 					on:click={() => {
 						params.num_batch = (params?.num_batch ?? null) === null ? 512 : null;
@@ -1466,7 +1466,7 @@
 					</div>
 
 					<button
-						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 						type="button"
 						on:click={() => {
 							params.num_thread = (params?.num_thread ?? null) === null ? 2 : null;
@@ -1522,7 +1522,7 @@
 					</div>
 
 					<button
-						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 						type="button"
 						on:click={() => {
 							params.num_gpu = (params?.num_gpu ?? null) === null ? 0 : null;
@@ -1577,7 +1577,7 @@
 						{'keep_alive'} ({$i18n.t('Ollama')})
 					</div>
 					<button
-						class="p-1 px-3 text-xs flex rounded-sm transition"
+						class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 						on:click={() => {
 							params.keep_alive = (params?.keep_alive ?? null) === null ? '5m' : null;
 						}}
@@ -1629,7 +1629,7 @@
 								/>
 							</div>
 							<button
-								class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+								class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 								type="button"
 								on:click={() => {
 									delete params.custom_params[key];
@@ -1656,7 +1656,7 @@
 				{/each}
 
 				<button
-					class=" flex gap-2 items-center w-full text-center justify-center mt-1 mb-5"
+					class=" flex gap-2 items-center w-full text-center justify-center mt-1 mb-5 snes-button"
 					type="button"
 					on:click={() => {
 						params.custom_params = (params?.custom_params ?? {}) || {};

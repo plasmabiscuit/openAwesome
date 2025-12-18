@@ -134,7 +134,7 @@
 				{#if $user?.status_emoji || $user?.status_message}
 					<div class="mx-1">
 						<button
-							class="mb-1 w-full gap-2 px-2.5 py-1.5 rounded-xl bg-gray-50 dark:text-white dark:bg-gray-900/50 text-black transition text-xs flex items-center"
+							class="mb-1 w-full gap-2 px-2.5 py-1.5 rounded-xl bg-gray-50 dark:text-white dark:bg-gray-900/50 text-black transition text-xs flex items-center snes-button"
 							type="button"
 							on:click={() => {
 								show = false;
@@ -174,7 +174,7 @@
 											} else {
 												toast.error($i18n.t('Failed to clear status'));
 											}
-										}}
+										}} class="snes-button"
 									>
 										<XMark className="size-4 opacity-50" strokeWidth="2" />
 									</button>
@@ -185,7 +185,7 @@
 				{:else}
 					<div class="mx-1">
 						<button
-							class="mb-1 w-full px-3 py-1.5 gap-1 rounded-xl bg-gray-50 dark:text-white dark:bg-gray-900/50 text-black transition text-xs flex items-center justify-center"
+							class="mb-1 w-full px-3 py-1.5 gap-1 rounded-xl bg-gray-50 dark:text-white dark:bg-gray-900/50 text-black transition text-xs flex items-center justify-center snes-button"
 							type="button"
 							on:click={() => {
 								show = false;

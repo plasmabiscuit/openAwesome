@@ -890,7 +890,7 @@
 
 										{#if RAG_EMBEDDING_ENGINE === ''}
 											<button
-												class="px-2.5 bg-transparent text-gray-800 dark:bg-transparent dark:text-gray-100 rounded-lg transition"
+												class="px-2.5 bg-transparent text-gray-800 dark:bg-transparent dark:text-gray-100 rounded-lg transition snes-button"
 												on:click={() => {
 													embeddingModelUpdateHandler();
 												}}
@@ -1144,7 +1144,7 @@
 												{$i18n.t('BM25 Weight')}
 											</div>
 											<button
-												class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+												class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden snes-button"
 												type="button"
 												on:click={() => {
 													RAGConfig.HYBRID_BM25_WEIGHT =
@@ -1363,7 +1363,7 @@
 						<div class=" self-center text-xs font-medium">{$i18n.t('Reset Upload Directory')}</div>
 						<div class="flex items-center relative">
 							<button
-								class="text-xs"
+								class="text-xs snes-button"
 								type="button"
 								on:click={() => {
 									showResetUploadDirConfirm = true;
@@ -1380,7 +1380,7 @@
 						</div>
 						<div class="flex items-center relative">
 							<button
-								class="text-xs"
+								class="text-xs snes-button"
 								type="button"
 								on:click={() => {
 									showResetConfirm = true;
@@ -1396,7 +1396,7 @@
 						</div>
 						<div class="flex items-center relative">
 							<button
-								class="text-xs"
+								class="text-xs snes-button"
 								type="button"
 								on:click={() => {
 									showReindexConfirm = true;
@@ -1411,7 +1411,7 @@
 		</div>
 		<div class="flex justify-end pt-3 text-sm font-medium">
 			<button
-				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 				type="submit"
 			>
 				{$i18n.t('Save')}

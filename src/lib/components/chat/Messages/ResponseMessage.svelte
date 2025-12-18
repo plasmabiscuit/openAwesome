@@ -731,7 +731,7 @@
 									<div>
 										<button
 											id="save-new-message-button"
-											class="px-3.5 py-1.5 bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 border border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-200 transition rounded-3xl"
+											class="px-3.5 py-1.5 bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 border border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-200 transition rounded-3xl snes-button"
 											on:click={() => {
 												saveAsCopyHandler();
 											}}
@@ -743,7 +743,7 @@
 									<div class="flex space-x-1.5">
 										<button
 											id="close-edit-message-button"
-											class="px-3.5 py-1.5 bg-white dark:bg-gray-900 hover:bg-gray-100 text-gray-800 dark:text-gray-100 transition rounded-3xl"
+											class="px-3.5 py-1.5 bg-white dark:bg-gray-900 hover:bg-gray-100 text-gray-800 dark:text-gray-100 transition rounded-3xl snes-button"
 											on:click={() => {
 												cancelEditMessage();
 											}}
@@ -753,7 +753,7 @@
 
 										<button
 											id="confirm-edit-message-button"
-											class="px-3.5 py-1.5 bg-gray-900 dark:bg-white hover:bg-gray-850 text-gray-100 dark:text-gray-800 transition rounded-3xl"
+											class="px-3.5 py-1.5 bg-gray-900 dark:bg-white hover:bg-gray-850 text-gray-100 dark:text-gray-800 transition rounded-3xl snes-button"
 											on:click={() => {
 												editMessageConfirmHandler();
 											}}
@@ -846,7 +846,7 @@
 								<div class="flex self-center min-w-fit" dir="ltr">
 									<button
 										aria-label={$i18n.t('Previous message')}
-										class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition"
+										class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition snes-button"
 										on:click={() => {
 											showPreviousMessage(message);
 										}}
@@ -914,7 +914,7 @@
 									{/if}
 
 									<button
-										class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition"
+										class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition snes-button"
 										on:click={() => {
 											showNextMessage(message);
 										}}
@@ -947,7 +947,7 @@
 												aria-label={$i18n.t('Edit')}
 												class="{isLastMessage || ($settings?.highContrastMode ?? false)
 													? 'visible'
-													: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+													: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 												on:click={() => {
 													editMessageHandler();
 												}}
@@ -977,7 +977,7 @@
 										aria-label={$i18n.t('Copy')}
 										class="{isLastMessage || ($settings?.highContrastMode ?? false)
 											? 'visible'
-											: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition copy-response-button"
+											: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition copy-response-button snes-button"
 										on:click={() => {
 											copyToClipboard(message.content);
 										}}
@@ -1007,7 +1007,7 @@
 											id="speak-button-{message.id}"
 											class="{isLastMessage || ($settings?.highContrastMode ?? false)
 												? 'visible'
-												: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+												: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 											on:click={() => {
 												if (!loadingSpeech) {
 													if (speaking) {
@@ -1094,7 +1094,7 @@
 											aria-label={$i18n.t('Generate Image')}
 											class="{isLastMessage || ($settings?.highContrastMode ?? false)
 												? 'visible'
-												: 'invisible group-hover:visible'}  p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+												: 'invisible group-hover:visible'}  p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 											on:click={() => {
 												if (!generatingImage) {
 													generateImage(message);
@@ -1174,7 +1174,7 @@
 											aria-hidden="true"
 											class=" {isLastMessage || ($settings?.highContrastMode ?? false)
 												? 'visible'
-												: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition whitespace-pre-wrap"
+												: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition whitespace-pre-wrap snes-button"
 											on:click={() => {
 												console.log(message);
 											}}
@@ -1210,7 +1210,7 @@
 													message?.annotation?.rating ?? ''
 												).toString() === '1'
 													? 'bg-gray-100 dark:bg-gray-800'
-													: ''} dark:hover:text-white hover:text-black transition disabled:cursor-progress disabled:hover:bg-transparent"
+													: ''} dark:hover:text-white hover:text-black transition disabled:cursor-progress disabled:hover:bg-transparent snes-button"
 												disabled={feedbackLoading}
 												on:click={async () => {
 													await feedbackHandler(1);
@@ -1248,7 +1248,7 @@
 													message?.annotation?.rating ?? ''
 												).toString() === '-1'
 													? 'bg-gray-100 dark:bg-gray-800'
-													: ''} dark:hover:text-white hover:text-black transition disabled:cursor-progress disabled:hover:bg-transparent"
+													: ''} dark:hover:text-white hover:text-black transition disabled:cursor-progress disabled:hover:bg-transparent snes-button"
 												disabled={feedbackLoading}
 												on:click={async () => {
 													await feedbackHandler(-1);
@@ -1286,7 +1286,7 @@
 												id="continue-response-button"
 												class="{isLastMessage || ($settings?.highContrastMode ?? false)
 													? 'visible'
-													: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+													: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 												on:click={() => {
 													continueResponse();
 												}}
@@ -1319,7 +1319,7 @@
 										{#if $settings?.regenerateMenu ?? true}
 											<button
 												type="button"
-												class="hidden regenerate-response-button"
+												class="hidden regenerate-response-button snes-button"
 												on:click={() => {
 													showRateComment = false;
 													regenerateResponse(message);
@@ -1388,7 +1388,7 @@
 													aria-label={$i18n.t('Regenerate')}
 													class="{isLastMessage
 														? 'visible'
-														: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition regenerate-response-button"
+														: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition regenerate-response-button snes-button"
 													on:click={() => {
 														showRateComment = false;
 														regenerateResponse(message);
@@ -1435,7 +1435,7 @@
 													id="delete-response-button"
 													class="{isLastMessage || ($settings?.highContrastMode ?? false)
 														? 'visible'
-														: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+														: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 													on:click={() => {
 														showDeleteConfirm = true;
 													}}
@@ -1468,7 +1468,7 @@
 													aria-label={action.name}
 													class="{isLastMessage || ($settings?.highContrastMode ?? false)
 														? 'visible'
-														: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+														: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 													on:click={() => {
 														actionMessage(action.id, message);
 													}}

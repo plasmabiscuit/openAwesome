@@ -36,7 +36,7 @@
 				{$i18n.t('Attach Webpage')}
 			</h1>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				aria-label={$i18n.t('Close modal')}
 				on:click={() => {
 					show = false;
@@ -73,7 +73,7 @@
 
 				<div class="flex justify-end gap-2 pt-3 bg-gray-50 dark:bg-gray-900/50">
 					<button
-						class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 transition rounded-full"
+						class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 transition rounded-full snes-button"
 						type="submit"
 					>
 						{$i18n.t('Add')}

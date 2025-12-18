@@ -46,7 +46,7 @@
 				<button
 					class=" px-3 py-1 rounded-xl w-full text-left {promptIdx === selectedPromptIdx
 						? '  bg-gray-50 dark:bg-gray-800 selected-command-option-button'
-						: ''} truncate"
+						: ''} truncate snes-button"
 					type="button"
 					on:click={() => {
 						onSelect({ type: 'prompt', data: promptItem });

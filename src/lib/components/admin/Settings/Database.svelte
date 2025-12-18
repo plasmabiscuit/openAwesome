@@ -87,7 +87,7 @@
 
 			<button
 				type="button"
-				class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+				class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 				on:click={async () => {
 					document.getElementById('config-json-input').click();
 				}}
@@ -114,7 +114,7 @@
 
 			<button
 				type="button"
-				class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+				class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 				on:click={async () => {
 					const config = await exportConfig(localStorage.token);
 					const blob = new Blob([JSON.stringify(config)], {
@@ -150,7 +150,7 @@
 					<!-- <div class=" self-center text-xs font-medium">{$i18n.t('Allow Chat Deletion')}</div> -->
 
 					<button
-						class=" flex rounded-md py-1.5 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+						class=" flex rounded-md py-1.5 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 						type="button"
 						on:click={() => {
 							// exportAllUserChats();
@@ -180,7 +180,7 @@
 				</div>
 
 				<button
-					class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+					class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 					on:click={() => {
 						exportAllUserChats();
 					}}
@@ -206,7 +206,7 @@
 				</button>
 
 				<button
-					class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+					class=" flex rounded-md py-2 px-3 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 					on:click={() => {
 						exportUsers();
 					}}

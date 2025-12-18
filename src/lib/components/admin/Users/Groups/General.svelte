@@ -99,7 +99,7 @@
 
 		<div class="flex-1">
 			<button
-				class="text-xs bg-transparent hover:underline cursor-pointer"
+				class="text-xs bg-transparent hover:underline cursor-pointer snes-button"
 				type="button"
 				on:click={() => onDelete()}
 			>

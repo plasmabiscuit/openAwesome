@@ -120,7 +120,7 @@
 				{$i18n.t('Settings')}
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -141,7 +141,7 @@
 						<div>
 							<div class="flex flex-col w-full">
 								<button
-									class="mb-1 flex gap-2"
+									class="mb-1 flex gap-2 snes-button"
 									type="button"
 									on:click={() => {
 										sortKey = 'model';
@@ -203,7 +203,7 @@
 						<div class="flex justify-between pt-3 text-sm font-medium gap-1.5">
 							<Tooltip content={$i18n.t('This will delete all models including custom models')}>
 								<button
-									class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-950 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center"
+									class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-950 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center snes-button"
 									type="button"
 									on:click={() => {
 										showResetModal = true;
@@ -217,7 +217,7 @@
 							<button
 								class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center {loading
 									? ' cursor-not-allowed'
-									: ''}"
+									: ''} snes-button"
 								type="submit"
 								disabled={loading}
 							>

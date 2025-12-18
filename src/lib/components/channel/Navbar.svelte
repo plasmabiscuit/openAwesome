@@ -54,7 +54,7 @@
 					>
 						<button
 							id="sidebar-toggle-button"
-							class=" cursor-pointer flex rounded-lg hover:bg-gray-100 dark:hover:bg-gray-850 transition cursor-"
+							class=" cursor-pointer flex rounded-lg hover:bg-gray-100 dark:hover:bg-gray-850 transition cursor- snes-button"
 							on:click={() => {
 								showSidebar.set(!$showSidebar);
 							}}
@@ -138,7 +138,7 @@
 				{#if channel}
 					<Tooltip content={$i18n.t('Pinned Messages')}>
 						<button
-							class=" flex cursor-pointer py-1.5 px-1.5 border dark:border-gray-850 border-gray-50 rounded-xl text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-850 transition"
+							class=" flex cursor-pointer py-1.5 px-1.5 border dark:border-gray-850 border-gray-50 rounded-xl text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-850 transition snes-button"
 							aria-label="Pinned Messages"
 							type="button"
 							on:click={() => {
@@ -154,7 +154,7 @@
 					{#if channel?.user_count !== undefined}
 						<Tooltip content={$i18n.t('Users')}>
 							<button
-								class=" flex cursor-pointer py-1 px-1.5 border dark:border-gray-850 border-gray-50 rounded-xl text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-850 transition"
+								class=" flex cursor-pointer py-1 px-1.5 border dark:border-gray-850 border-gray-50 rounded-xl text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-850 transition snes-button"
 								aria-label="User Count"
 								type="button"
 								on:click={() => {
@@ -185,7 +185,7 @@
 						}}
 					>
 						<button
-							class="select-none flex rounded-xl p-1.5 w-full hover:bg-gray-50 dark:hover:bg-gray-850 transition"
+							class="select-none flex rounded-xl p-1.5 w-full hover:bg-gray-50 dark:hover:bg-gray-850 transition snes-button"
 							aria-label="User Menu"
 						>
 							<div class=" self-center">

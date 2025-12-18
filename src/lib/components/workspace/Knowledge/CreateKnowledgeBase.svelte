@@ -47,7 +47,7 @@
 
 <div class="w-full max-h-full">
 	<button
-		class="flex space-x-1"
+		class="flex space-x-1 snes-button"
 		on:click={() => {
 			goto('/workspace/knowledge');
 		}}
@@ -125,7 +125,7 @@
 				<button
 					class=" text-sm px-4 py-2 transition rounded-lg {loading
 						? ' cursor-not-allowed bg-gray-100 dark:bg-gray-800'
-						: ' bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800'} flex"
+						: ' bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800'} flex snes-button"
 					type="submit"
 					disabled={loading}
 				>

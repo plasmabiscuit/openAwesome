@@ -23,6 +23,26 @@ export default defineConfig({
 	build: {
 		sourcemap: true
 	},
+	server: {
+		proxy: {
+			'/api': {
+				target: 'http://llamabox:8080',
+				changeOrigin: true
+			},
+			'/ollama': {
+				target: 'http://llamabox:8080',
+				changeOrigin: true
+			},
+			'/images': {
+				target: 'http://llamabox:8080',
+				changeOrigin: true
+			},
+			'/static': {
+				target: 'http://llamabox:8080',
+				changeOrigin: true
+			}
+		}
+	},
 	worker: {
 		format: 'es'
 	},

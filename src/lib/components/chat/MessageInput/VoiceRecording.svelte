@@ -406,7 +406,7 @@
 				: 'bg-indigo-400/20 text-indigo-600 dark:text-indigo-300 '} 
 
 
-             rounded-full"
+             rounded-full snes-button"
 			on:click={async () => {
 				stopRecording();
 				onCancel();
@@ -548,7 +548,7 @@
 			{:else}
 				<button
 					type="button"
-					class="p-1.5 bg-indigo-500 text-white dark:bg-indigo-500 dark:text-blue-950 rounded-full"
+					class="p-1.5 bg-indigo-500 text-white dark:bg-indigo-500 dark:text-blue-950 rounded-full snes-button"
 					on:click={async () => {
 						await confirmRecording();
 					}}

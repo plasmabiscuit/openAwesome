@@ -131,7 +131,7 @@
 				{/if}
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -243,7 +243,7 @@
 					<div class="flex justify-end pt-3 text-sm font-medium gap-1.5">
 						{#if edit}
 							<button
-								class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-black/90 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center"
+								class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-black/90 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center snes-button"
 								type="button"
 								on:click={() => {
 									showDeleteConfirmDialog = true;
@@ -256,7 +256,7 @@
 						<button
 							class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-950 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center {loading
 								? ' cursor-not-allowed'
-								: ''}"
+								: ''} snes-button"
 							type="submit"
 							disabled={loading}
 						>

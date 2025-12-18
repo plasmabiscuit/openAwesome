@@ -695,7 +695,7 @@
 								class=" absolute -top-12 left-0 right-0 flex justify-center z-30 pointer-events-none"
 							>
 								<button
-									class=" bg-white border border-gray-100 dark:border-none dark:bg-white/20 p-1.5 rounded-full pointer-events-auto"
+									class=" bg-white border border-gray-100 dark:border-none dark:bg-white/20 p-1.5 rounded-full pointer-events-auto snes-button"
 									on:click={() => {
 										scrollEnd = true;
 										scrollToBottom();
@@ -792,7 +792,7 @@
 										</div>
 										<div>
 											<button
-												class="flex items-center dark:text-gray-500"
+												class="flex items-center dark:text-gray-500 snes-button"
 												on:click={() => {
 													replyToMessage = null;
 												}}
@@ -818,7 +818,7 @@
 												</div>
 												<div class=" absolute -top-1 -right-1">
 													<button
-														class=" bg-white text-black border border-white rounded-full group-hover:visible invisible transition"
+														class=" bg-white text-black border border-white rounded-full group-hover:visible invisible transition snes-button"
 														type="button"
 														on:click={() => {
 															files.splice(fileIdx, 1);
@@ -975,7 +975,7 @@
 											>
 												<button
 													id="input-menu-button"
-													class="bg-transparent hover:bg-white/80 text-gray-800 dark:text-white dark:hover:bg-gray-800 transition rounded-full p-1.5 outline-hidden focus:outline-hidden"
+													class="bg-transparent hover:bg-white/80 text-gray-800 dark:text-white dark:hover:bg-gray-800 transition rounded-full p-1.5 outline-hidden focus:outline-hidden snes-button"
 													type="button"
 													aria-label="More"
 												>
@@ -1000,7 +1000,7 @@
 										<Tooltip content={$i18n.t('Record voice')}>
 											<button
 												id="voice-input-button"
-												class=" text-gray-600 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200 transition rounded-full p-1.5 mr-0.5 self-center"
+												class=" text-gray-600 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200 transition rounded-full p-1.5 mr-0.5 self-center snes-button"
 												type="button"
 												on:click={async () => {
 													try {
@@ -1050,7 +1050,7 @@
 											<div class=" flex items-center">
 												<Tooltip content={$i18n.t('Stop')}>
 													<button
-														class="bg-white hover:bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-800 transition rounded-full p-1.5"
+														class="bg-white hover:bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-800 transition rounded-full p-1.5 snes-button"
 														on:click={() => {
 															onStop();
 														}}
@@ -1077,7 +1077,7 @@
 														id="send-message-button"
 														class="{content !== '' || files.length !== 0
 															? 'bg-black text-white hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-100 '
-															: 'text-white bg-gray-200 dark:text-gray-900 dark:bg-gray-700 disabled'} transition rounded-full p-1.5 self-center"
+															: 'text-white bg-gray-200 dark:text-gray-900 dark:bg-gray-700 disabled'} transition rounded-full p-1.5 self-center snes-button"
 														type="submit"
 														disabled={content === '' && files.length === 0}
 													>

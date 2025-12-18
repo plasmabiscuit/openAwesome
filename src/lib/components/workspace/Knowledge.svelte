@@ -156,7 +156,7 @@
 				{#if query}
 					<div class="self-center pl-1.5 translate-y-[0.5px] rounded-l-xl bg-transparent">
 						<button
-							class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+							class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition snes-button"
 							on:click={() => {
 								query = '';
 							}}
@@ -198,7 +198,7 @@
 				{#each filteredItems as item}
 					<Tooltip content={item?.description ?? item.name}>
 						<button
-							class=" flex space-x-4 cursor-pointer text-left w-full px-3 py-2.5 dark:hover:bg-gray-850/50 hover:bg-gray-50 transition rounded-2xl"
+							class=" flex space-x-4 cursor-pointer text-left w-full px-3 py-2.5 dark:hover:bg-gray-850/50 hover:bg-gray-50 transition rounded-2xl snes-button"
 							on:click={() => {
 								if (item?.meta?.document) {
 									toast.error(

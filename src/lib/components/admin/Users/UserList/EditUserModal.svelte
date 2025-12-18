@@ -71,7 +71,7 @@
 		<div class=" flex justify-between dark:text-gray-300 px-5 pt-4 pb-2">
 			<div class=" text-lg font-medium self-center">{$i18n.t('Edit User')}</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -215,7 +215,7 @@
 
 						<div class="flex justify-end pt-3 text-sm font-medium">
 							<button
-								class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center"
+								class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center snes-button"
 								type="submit"
 							>
 								{$i18n.t('Save')}

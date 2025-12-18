@@ -221,7 +221,7 @@
 				</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition"
+					class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 					on:click={() => {
 						toggleSpeechAutoSend();
 					}}
@@ -276,7 +276,7 @@
 				<div class=" self-center text-xs font-medium">{$i18n.t('Auto-playback response')}</div>
 
 				<button
-					class="p-1 px-3 text-xs flex rounded-sm transition"
+					class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 					on:click={() => {
 						toggleResponseAutoPlayback();
 					}}
@@ -402,7 +402,7 @@
 
 	<div class="flex justify-end text-sm font-medium">
 		<button
-			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			type="submit"
 		>
 			{$i18n.t('Save')}

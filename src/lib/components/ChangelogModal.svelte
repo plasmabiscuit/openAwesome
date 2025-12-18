@@ -37,7 +37,7 @@
 				<Confetti x={[-1, -0.25]} y={[0, 0.5]} />
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					localStorage.version = $config.version;
 					show = false;
@@ -108,7 +108,7 @@
 					await updateUserSettings(localStorage.token, { ui: $settings });
 					show = false;
 				}}
-				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			>
 				<span class="relative">{$i18n.t("Okay, Let's Go!")}</span>
 			</button>

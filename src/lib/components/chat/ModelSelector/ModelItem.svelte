@@ -49,7 +49,7 @@
 	class="flex group/item w-full text-left font-medium line-clamp-1 select-none items-center rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-700 dark:text-gray-100 outline-hidden transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl cursor-pointer data-highlighted:bg-muted {index ===
 	selectedModelIdx
 		? 'bg-gray-100 dark:bg-gray-800 group-hover:bg-transparent'
-		: ''}"
+		: ''} snes-button"
 	data-arrow-selected={index === selectedModelIdx}
 	data-value={item.value}
 	on:click={() => {
@@ -233,7 +233,7 @@
 				className="flex-shrink-0 group-hover/item:opacity-100 opacity-0 "
 			>
 				<button
-					class="flex"
+					class="flex snes-button"
 					on:click={(e) => {
 						e.preventDefault();
 						e.stopPropagation();
@@ -255,7 +255,7 @@
 		>
 			<button
 				aria-label={`${$i18n.t('More Options')}`}
-				class="flex"
+				class="flex snes-button"
 				on:click={(e) => {
 					e.preventDefault();
 					e.stopPropagation();

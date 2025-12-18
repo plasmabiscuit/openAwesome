@@ -159,7 +159,7 @@
 								</div>
 
 								<button
-									class=" underline flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-500"
+									class=" underline flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-500 snes-button"
 									type="button"
 									on:click={() => {
 										showChangelog.set(true);
@@ -171,7 +171,7 @@
 
 							{#if $config?.features?.enable_version_update_check}
 								<button
-									class=" text-xs px-3 py-1.5 bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 transition rounded-lg font-medium"
+									class=" text-xs px-3 py-1.5 bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 transition rounded-lg font-medium snes-button"
 									type="button"
 									on:click={() => {
 										checkForVersionUpdates();
@@ -760,7 +760,7 @@
 
 	<div class="flex justify-end pt-3 text-sm font-medium">
 		<button
-			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			type="submit"
 		>
 			{$i18n.t('Save')}

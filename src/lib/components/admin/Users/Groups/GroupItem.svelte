@@ -64,7 +64,7 @@
 />
 
 <button
-	class="flex items-center gap-3 justify-between px-1 text-xs w-full transition"
+	class="flex items-center gap-3 justify-between px-1 text-xs w-full transition snes-button"
 	on:click={() => {
 		showEdit = true;
 	}}

@@ -271,7 +271,7 @@
 				<div class="flex items-center gap-1.5">
 					<Tooltip content={$i18n.t('Manage Models')}>
 						<button
-							class=" p-1 rounded-full flex gap-1 items-center"
+							class=" p-1 rounded-full flex gap-1 items-center snes-button"
 							type="button"
 							on:click={() => {
 								showManageModal = true;
@@ -283,7 +283,7 @@
 
 					<Tooltip content={$i18n.t('Settings')}>
 						<button
-							class=" p-1 rounded-full flex gap-1 items-center"
+							class=" p-1 rounded-full flex gap-1 items-center snes-button"
 							type="button"
 							on:click={() => {
 								showConfigModal = true;
@@ -308,7 +308,7 @@
 					{#if searchValue}
 						<div class="self-center pl-1.5 translate-y-[0.5px] rounded-l-xl bg-transparent">
 							<button
-								class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+								class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition snes-button"
 								on:click={() => {
 									searchValue = '';
 								}}
@@ -332,7 +332,7 @@
 						id="model-item-{model.id}"
 					>
 						<button
-							class=" flex flex-1 text-left space-x-3.5 cursor-pointer w-full"
+							class=" flex flex-1 text-left space-x-3.5 cursor-pointer w-full snes-button"
 							type="button"
 							on:click={() => {
 								selectedModelId = model.id;
@@ -381,7 +381,7 @@
 							{#if shiftKey}
 								<Tooltip content={model?.meta?.hidden ? $i18n.t('Show') : $i18n.t('Hide')}>
 									<button
-										class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+										class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 										type="button"
 										on:click={() => {
 											hideModelHandler(model);
@@ -396,7 +396,7 @@
 								</Tooltip>
 							{:else}
 								<button
-									class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+									class="self-center w-fit text-sm px-2 py-2 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 									type="button"
 									on:click={() => {
 										selectedModelId = model.id;
@@ -436,7 +436,7 @@
 									onClose={() => {}}
 								>
 									<button
-										class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+										class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 										type="button"
 									>
 										<EllipsisHorizontal className="size-5" />
@@ -507,7 +507,7 @@
 					/>
 
 					<button
-						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200 transition"
+						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200 transition snes-button"
 						disabled={modelsImportInProgress}
 						on:click={() => {
 							modelsImportInputElement.click();
@@ -537,7 +537,7 @@
 					</button>
 
 					<button
-						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200 transition"
+						class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200 transition snes-button"
 						on:click={async () => {
 							downloadModels(models);
 						}}

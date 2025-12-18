@@ -30,7 +30,7 @@
 				{$i18n.t('Manage')}
 			</h1>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				aria-label={$i18n.t('Close modal')}
 				on:click={() => {
 					show = false;
@@ -95,7 +95,7 @@
 
 					<div class="flex justify-end text-sm font-medium">
 						<button
-							class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+							class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 							type="submit"
 						>
 							{$i18n.t('Save')}

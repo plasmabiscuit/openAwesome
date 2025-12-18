@@ -46,7 +46,7 @@
 	<div class="flex justify-between items-center text-sm">
 		<div class="  font-medium">{$i18n.t('Change Password')}</div>
 		<button
-			class=" text-xs font-medium text-gray-500"
+			class=" text-xs font-medium text-gray-500 snes-button"
 			type="button"
 			on:click={() => {
 				show = !show;
@@ -104,7 +104,7 @@
 
 		<div class="mt-3 flex justify-end">
 			<button
-				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			>
 				{$i18n.t('Update password')}
 			</button>

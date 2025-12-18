@@ -575,7 +575,7 @@
 			<div class=" text-lg font-medium self-center">{$i18n.t('Settings')}</div>
 			<button
 				aria-label={$i18n.t('Close settings modal')}
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -617,7 +617,7 @@
 								role="tab"
 								aria-controls="tab-general"
 								aria-selected={selectedTab === 'general'}
-								class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+								class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'general'
 										? ($settings?.highContrastMode ?? false)
@@ -626,7 +626,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 								on:click={() => {
 									selectedTab = 'general';
 								}}
@@ -641,7 +641,7 @@
 								role="tab"
 								aria-controls="tab-interface"
 								aria-selected={selectedTab === 'interface'}
-								class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+								class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'interface'
 										? ($settings?.highContrastMode ?? false)
@@ -650,7 +650,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 								on:click={() => {
 									selectedTab = 'interface';
 								}}
@@ -666,7 +666,7 @@
 									role="tab"
 									aria-controls="tab-connections"
 									aria-selected={selectedTab === 'connections'}
-									class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+									class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'connections'
 										? ($settings?.highContrastMode ?? false)
@@ -675,7 +675,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 									on:click={() => {
 										selectedTab = 'connections';
 									}}
@@ -692,7 +692,7 @@
 									role="tab"
 									aria-controls="tab-tools"
 									aria-selected={selectedTab === 'tools'}
-									class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+									class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'tools'
 										? ($settings?.highContrastMode ?? false)
@@ -701,7 +701,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 									on:click={() => {
 										selectedTab = 'tools';
 									}}
@@ -717,7 +717,7 @@
 								role="tab"
 								aria-controls="tab-personalization"
 								aria-selected={selectedTab === 'personalization'}
-								class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+								class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'personalization'
 										? ($settings?.highContrastMode ?? false)
@@ -726,7 +726,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 								on:click={() => {
 									selectedTab = 'personalization';
 								}}
@@ -741,7 +741,7 @@
 								role="tab"
 								aria-controls="tab-audio"
 								aria-selected={selectedTab === 'audio'}
-								class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+								class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'audio'
 										? ($settings?.highContrastMode ?? false)
@@ -750,7 +750,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 								on:click={() => {
 									selectedTab = 'audio';
 								}}
@@ -765,7 +765,7 @@
 								role="tab"
 								aria-controls="tab-data-controls"
 								aria-selected={selectedTab === 'data_controls'}
-								class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+								class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'data_controls'
 										? ($settings?.highContrastMode ?? false)
@@ -774,7 +774,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 								on:click={() => {
 									selectedTab = 'data_controls';
 								}}
@@ -789,7 +789,7 @@
 								role="tab"
 								aria-controls="tab-account"
 								aria-selected={selectedTab === 'account'}
-								class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+								class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'account'
 										? ($settings?.highContrastMode ?? false)
@@ -798,7 +798,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 								on:click={() => {
 									selectedTab = 'account';
 								}}
@@ -813,7 +813,7 @@
 								role="tab"
 								aria-controls="tab-about"
 								aria-selected={selectedTab === 'about'}
-								class={`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
+								class="{`px-0.5 md:px-2.5 py-1 min-w-fit rounded-xl flex-1 md:flex-none flex text-left transition
 								${
 									selectedTab === 'about'
 										? ($settings?.highContrastMode ?? false)
@@ -822,7 +822,7 @@
 										: ($settings?.highContrastMode ?? false)
 											? 'hover:bg-gray-200 dark:hover:bg-gray-800'
 											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'
-								}`}
+								}`} snes-button"
 								on:click={() => {
 									selectedTab = 'about';
 								}}

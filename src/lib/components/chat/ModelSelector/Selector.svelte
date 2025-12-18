@@ -467,7 +467,7 @@
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedTag === '' &&
 									selectedConnectionType === ''
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize snes-button"
 									aria-pressed={selectedTag === '' && selectedConnectionType === ''}
 									on:click={() => {
 										selectedConnectionType = '';
@@ -482,7 +482,7 @@
 								<button
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedConnectionType === 'local'
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize snes-button"
 									aria-pressed={selectedConnectionType === 'local'}
 									on:click={() => {
 										selectedTag = '';
@@ -497,7 +497,7 @@
 								<button
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedConnectionType === 'external'
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize snes-button"
 									aria-pressed={selectedConnectionType === 'external'}
 									on:click={() => {
 										selectedTag = '';
@@ -512,7 +512,7 @@
 								<button
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedConnectionType === 'direct'
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize snes-button"
 									aria-pressed={selectedConnectionType === 'direct'}
 									on:click={() => {
 										selectedTag = '';
@@ -528,7 +528,7 @@
 									<button
 										class="min-w-fit outline-none px-1.5 py-0.5 {selectedTag === tag
 											? ''
-											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize snes-button"
 										aria-pressed={selectedTag === tag}
 										on:click={() => {
 											selectedConnectionType = '';
@@ -576,7 +576,7 @@
 						placement="top-start"
 					>
 						<button
-							class="flex w-full font-medium line-clamp-1 select-none items-center rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-700 dark:text-gray-100 outline-hidden transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl cursor-pointer data-highlighted:bg-muted"
+							class="flex w-full font-medium line-clamp-1 select-none items-center rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-700 dark:text-gray-100 outline-hidden transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl cursor-pointer data-highlighted:bg-muted snes-button"
 							on:click={() => {
 								pullModelHandler();
 							}}
@@ -621,7 +621,7 @@
 						<div class="mr-2 ml-1 translate-y-0.5">
 							<Tooltip content={$i18n.t('Cancel')}>
 								<button
-									class="text-gray-800 dark:text-gray-100"
+									class="text-gray-800 dark:text-gray-100 snes-button"
 									on:click={() => {
 										cancelModelPullHandler(model);
 									}}

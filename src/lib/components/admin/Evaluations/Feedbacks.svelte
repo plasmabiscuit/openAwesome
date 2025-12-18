@@ -164,7 +164,7 @@
 			<div>
 				<Tooltip content={$i18n.t('Export')}>
 					<button
-						class=" p-2 rounded-xl hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 transition font-medium text-sm flex items-center space-x-1"
+						class=" p-2 rounded-xl hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 transition font-medium text-sm flex items-center space-x-1 snes-button"
 						on:click={() => {
 							exportHandler();
 						}}
@@ -359,7 +359,7 @@
 									}}
 								>
 									<button
-										class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+										class="self-center w-fit text-sm p-1.5 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 									>
 										<EllipsisHorizontal />
 									</button>
@@ -385,7 +385,7 @@
 					)}
 				>
 					<button
-						class="flex text-xs items-center px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition"
+						class="flex text-xs items-center px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-200 transition snes-button"
 						on:click={async () => {
 							shareHandler();
 						}}

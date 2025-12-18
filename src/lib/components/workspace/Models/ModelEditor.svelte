@@ -330,7 +330,7 @@
 
 	{#if onBack}
 		<button
-			class="flex space-x-1"
+			class="flex space-x-1 snes-button"
 			on:click={() => {
 				onBack();
 			}}
@@ -435,7 +435,7 @@
 							class="rounded-xl flex shrink-0 items-center {info.meta.profile_image_url !==
 							`${WEBUI_BASE_URL}/static/favicon.png`
 								? 'bg-transparent'
-								: 'bg-white'} shadow-xl group relative"
+								: 'bg-white'} shadow-xl group relative snes-button"
 							type="button"
 							on:click={() => {
 								filesInputElement.click();
@@ -483,7 +483,7 @@
 
 						<div class="flex w-full mt-1 justify-end">
 							<button
-								class="px-2 py-1 text-gray-500 rounded-lg text-xs"
+								class="px-2 py-1 text-gray-500 rounded-lg text-xs snes-button"
 								on:click={() => {
 									info.meta.profile_image_url = `${WEBUI_BASE_URL}/static/favicon.png`;
 								}}
@@ -523,7 +523,7 @@
 
 							<div>
 								<button
-									class="bg-gray-50 hover:bg-gray-100 text-black dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-white transition px-2 py-1 rounded-full flex gap-1 items-center"
+									class="bg-gray-50 hover:bg-gray-100 text-black dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-white transition px-2 py-1 rounded-full flex gap-1 items-center snes-button"
 									type="button"
 									on:click={() => {
 										showAccessControlModal = true;
@@ -572,7 +572,7 @@
 								</div>
 
 								<button
-									class="p-1 text-xs flex rounded-sm transition"
+									class="p-1 text-xs flex rounded-sm transition snes-button"
 									type="button"
 									aria-pressed={enableDescription ? 'true' : 'false'}
 									aria-label={enableDescription
@@ -650,7 +650,7 @@
 								</div>
 
 								<button
-									class="p-1 px-3 text-xs flex rounded-sm transition"
+									class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 									type="button"
 									on:click={() => {
 										showAdvanced = !showAdvanced;
@@ -682,7 +682,7 @@
 								</div>
 
 								<button
-									class="p-1 text-xs flex rounded-sm transition"
+									class="p-1 text-xs flex rounded-sm transition snes-button"
 									type="button"
 									on:click={() => {
 										if ((info?.meta?.suggestion_prompts ?? null) === null) {
@@ -785,7 +785,7 @@
 						<button
 							class=" text-sm px-3 py-2 transition rounded-lg {loading
 								? ' cursor-not-allowed bg-black hover:bg-gray-900 text-white dark:bg-white dark:hover:bg-gray-100 dark:text-black'
-								: 'bg-black hover:bg-gray-900 text-white dark:bg-white dark:hover:bg-gray-100 dark:text-black'} flex w-full justify-center"
+								: 'bg-black hover:bg-gray-900 text-white dark:bg-white dark:hover:bg-gray-100 dark:text-black'} flex w-full justify-center snes-button"
 							type="submit"
 							disabled={loading}
 						>
@@ -810,7 +810,7 @@
 							<div class=" self-center text-sm font-medium">{$i18n.t('JSON Preview')}</div>
 
 							<button
-								class="p-1 px-3 text-xs flex rounded-sm transition"
+								class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 								type="button"
 								on:click={() => {
 									showPreview = !showPreview;

@@ -148,7 +148,7 @@
 				hidden
 			/>
 			<button
-				class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+				class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 				on:click={() => {
 					chatImportInputElement.click();
 				}}
@@ -172,7 +172,7 @@
 
 			{#if $user?.role === 'admin' || ($user.permissions?.chat?.export ?? true)}
 				<button
-					class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+					class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 					on:click={() => {
 						exportChats();
 					}}
@@ -200,7 +200,7 @@
 
 		<div class="flex flex-col">
 			<button
-				class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+				class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 				on:click={() => {
 					showArchivedChatsModal = true;
 				}}
@@ -246,7 +246,7 @@
 
 					<div class="flex space-x-1.5 items-center">
 						<button
-							class="hover:text-white transition"
+							class="hover:text-white transition snes-button"
 							on:click={() => {
 								archiveAllChatsHandler();
 								showArchiveConfirm = false;
@@ -266,7 +266,7 @@
 							</svg>
 						</button>
 						<button
-							class="hover:text-white transition"
+							class="hover:text-white transition snes-button"
 							on:click={() => {
 								showArchiveConfirm = false;
 							}}
@@ -286,7 +286,7 @@
 				</div>
 			{:else}
 				<button
-					class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+					class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 					on:click={() => {
 						showArchiveConfirm = true;
 					}}
@@ -333,7 +333,7 @@
 
 					<div class="flex space-x-1.5 items-center">
 						<button
-							class="hover:text-white transition"
+							class="hover:text-white transition snes-button"
 							on:click={() => {
 								deleteAllChatsHandler();
 								showDeleteConfirm = false;
@@ -353,7 +353,7 @@
 							</svg>
 						</button>
 						<button
-							class="hover:text-white transition"
+							class="hover:text-white transition snes-button"
 							on:click={() => {
 								showDeleteConfirm = false;
 							}}
@@ -373,7 +373,7 @@
 				</div>
 			{:else}
 				<button
-					class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+					class=" flex rounded-md py-2 px-3.5 w-full hover:bg-gray-200 dark:hover:bg-gray-800 transition snes-button"
 					on:click={() => {
 						showDeleteConfirm = true;
 					}}

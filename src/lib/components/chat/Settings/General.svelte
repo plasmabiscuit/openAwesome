@@ -260,7 +260,7 @@
 					<div class=" self-center text-xs font-medium">{$i18n.t('Notifications')}</div>
 
 					<button
-						class="p-1 px-3 text-xs flex rounded-sm transition"
+						class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 						on:click={() => {
 							toggleNotification();
 						}}
@@ -300,7 +300,7 @@
 					<button
 						class=" text-xs font-medium {($settings?.highContrastMode ?? false)
 							? 'text-gray-800 dark:text-gray-100'
-							: 'text-gray-400 dark:text-gray-500'}"
+							: 'text-gray-400 dark:text-gray-500'} snes-button"
 						type="button"
 						on:click={() => {
 							showAdvanced = !showAdvanced;
@@ -317,7 +317,7 @@
 
 	<div class="flex justify-end pt-3 text-sm font-medium">
 		<button
-			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			on:click={() => {
 				saveHandler();
 			}}

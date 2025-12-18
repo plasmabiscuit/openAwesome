@@ -160,7 +160,7 @@
 						class="flex items-center justify-between px-2.5 py-1.5 rounded-xl w-full text-left {i ===
 						selectedIndex
 							? 'bg-gray-50 dark:bg-gray-800 selected-command-option-button'
-							: ''}"
+							: ''} snes-button"
 						data-selected={i === selectedIndex}
 					>
 						{#if item.type === 'channel'}

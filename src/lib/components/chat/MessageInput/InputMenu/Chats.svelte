@@ -77,7 +77,7 @@
 					class=" px-2.5 py-1 rounded-xl w-full text-left flex justify-between items-center text-sm {idx ===
 					selectedIdx
 						? ' bg-gray-50 dark:bg-gray-800 dark:text-gray-100 selected-command-option-button'
-						: ''}"
+						: ''} snes-button"
 					type="button"
 					on:click={() => {
 						onSelect(item);

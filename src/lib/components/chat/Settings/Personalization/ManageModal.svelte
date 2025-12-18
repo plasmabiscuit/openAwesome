@@ -55,7 +55,7 @@
 		<div class=" flex justify-between dark:text-gray-300 px-5 pt-4 pb-1">
 			<div class=" text-lg font-medium self-center">{$i18n.t('Memory')}</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -109,7 +109,7 @@
 												<div class="flex justify-end w-full">
 													<Tooltip content="Edit">
 														<button
-															class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+															class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 															on:click={() => {
 																selectedMemory = memory;
 																showEditMemoryModal = true;
@@ -134,7 +134,7 @@
 
 													<Tooltip content="Delete">
 														<button
-															class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+															class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 															on:click={async () => {
 																const res = await deleteMemoryById(
 																	localStorage.token,
@@ -184,13 +184,13 @@
 			</div>
 			<div class="flex text-sm font-medium gap-1.5">
 				<button
-					class=" px-3.5 py-1.5 font-medium hover:bg-black/5 dark:hover:bg-white/5 outline outline-1 outline-gray-100 dark:outline-gray-800 rounded-3xl"
+					class=" px-3.5 py-1.5 font-medium hover:bg-black/5 dark:hover:bg-white/5 outline outline-1 outline-gray-100 dark:outline-gray-800 rounded-3xl snes-button"
 					on:click={() => {
 						showAddMemoryModal = true;
 					}}>{$i18n.t('Add Memory')}</button
 				>
 				<button
-					class=" px-3.5 py-1.5 font-medium text-red-500 hover:bg-black/5 dark:hover:bg-white/5 outline outline-1 outline-red-100 dark:outline-red-800 rounded-3xl"
+					class=" px-3.5 py-1.5 font-medium text-red-500 hover:bg-black/5 dark:hover:bg-white/5 outline outline-1 outline-red-100 dark:outline-red-800 rounded-3xl snes-button"
 					on:click={() => {
 						if (memories.length > 0) {
 							showClearConfirmDialog = true;

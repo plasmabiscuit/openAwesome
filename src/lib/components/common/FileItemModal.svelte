@@ -108,7 +108,7 @@
 					<button
 						on:click={() => {
 							show = false;
-						}}
+						}} class="snes-button"
 					>
 						<XMark />
 					</button>
@@ -210,7 +210,7 @@
 						<button
 							class="min-w-fit py-1.5 px-4 border-b {selectedTab === ''
 								? ' '
-								: ' border-transparent text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
+								: ' border-transparent text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition snes-button"
 							type="button"
 							on:click={() => {
 								selectedTab = '';
@@ -220,7 +220,7 @@
 						<button
 							class="min-w-fit py-1.5 px-4 border-b {selectedTab === 'preview'
 								? ' '
-								: ' border-transparent text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
+								: ' border-transparent text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition snes-button"
 							type="button"
 							on:click={() => {
 								selectedTab = 'preview';

@@ -70,7 +70,7 @@
 			<button
 				class="px-2.5 py-1.5 rounded-xl w-full text-left {modelIdx === selectedIdx
 					? 'bg-gray-50 dark:bg-gray-800 selected-command-option-button'
-					: ''}"
+					: ''} snes-button"
 				type="button"
 				on:click={() => {
 					onSelect({ type: 'model', data: model });

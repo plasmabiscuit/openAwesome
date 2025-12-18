@@ -286,7 +286,7 @@
 		{#if showClearButton && value}
 			<div class="self-center pl-1.5 translate-y-[0.5px] rounded-l-xl bg-transparent">
 				<button
-					class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+					class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition snes-button"
 					on:click={clearSearchInput}
 				>
 					<XMark className="size-3" strokeWidth="2" />
@@ -322,7 +322,7 @@
 								class=" px-1.5 py-0.5 flex gap-1 hover:bg-gray-100 dark:hover:bg-gray-900 w-full rounded {selectedIdx ===
 								itemIdx
 									? 'bg-gray-100 dark:bg-gray-900'
-									: ''}"
+									: ''} snes-button"
 								data-selected={selectedIdx === itemIdx}
 								id="search-item-{itemIdx}"
 								on:click|stopPropagation={async () => {
@@ -358,7 +358,7 @@
 								class=" px-1.5 py-0.5 flex gap-1 hover:bg-gray-100 dark:hover:bg-gray-900 w-full rounded {selectedIdx ===
 								optionIdx
 									? 'bg-gray-100 dark:bg-gray-900'
-									: ''}"
+									: ''} snes-button"
 								id="search-option-{optionIdx}"
 								on:click|stopPropagation={async () => {
 									const words = value.split(' ');

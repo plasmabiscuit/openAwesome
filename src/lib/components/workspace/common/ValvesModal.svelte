@@ -157,7 +157,7 @@
 		<div class=" flex justify-between dark:text-gray-300 px-5 pt-4 pb-2">
 			<div class=" text-lg font-medium self-center">{$i18n.t('Valves')}</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -186,7 +186,7 @@
 						<button
 							class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full {saving
 								? ' cursor-not-allowed'
-								: ''}"
+								: ''} snes-button"
 							type="submit"
 							disabled={saving}
 						>

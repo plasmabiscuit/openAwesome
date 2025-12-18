@@ -188,7 +188,7 @@
 		>
 			<button
 				type="button"
-				class="p-0.5 dark:hover:bg-gray-850 rounded-lg touch-auto"
+				class="p-0.5 dark:hover:bg-gray-850 rounded-lg touch-auto snes-button"
 				on:click={async (e) => {
 					e.stopImmediatePropagation();
 					e.stopPropagation();
@@ -215,7 +215,7 @@
 		>
 			<button
 				type="button"
-				class="p-0.5 dark:hover:bg-gray-850 rounded-lg touch-auto"
+				class="p-0.5 dark:hover:bg-gray-850 rounded-lg touch-auto snes-button"
 				on:click={(e) => {
 					e.stopImmediatePropagation();
 					e.stopPropagation();

@@ -513,7 +513,7 @@
 										/>
 									</div>
 									<button
-										class="  transition"
+										class="  transition snes-button"
 										type="button"
 										aria-label="verify connection"
 										on:click={async () => {
@@ -627,7 +627,7 @@
 										/>
 									</div>
 									<button
-										class="  rounded-lg transition"
+										class="  rounded-lg transition snes-button"
 										type="button"
 										aria-label="verify connection"
 										on:click={async () => {
@@ -709,7 +709,7 @@
 									<div class="flex-1 mr-2 justify-end flex gap-1">
 										{#if config.COMFYUI_WORKFLOW}
 											<button
-												class="text-xs text-gray-700 dark:text-gray-400 underline"
+												class="text-xs text-gray-700 dark:text-gray-400 underline snes-button"
 												type="button"
 												aria-label={$i18n.t('Edit workflow.json content')}
 												on:click={() => {
@@ -723,7 +723,7 @@
 
 										<Tooltip content={$i18n.t('Click here to upload a workflow.json file.')}>
 											<button
-												class="text-xs text-gray-700 dark:text-gray-400 underline"
+												class="text-xs text-gray-700 dark:text-gray-400 underline snes-button"
 												type="button"
 												aria-label={$i18n.t('Click here to upload a workflow.json file.')}
 												on:click={() => {
@@ -1040,7 +1040,7 @@
 										/>
 									</div>
 									<button
-										class="  transition"
+										class="  transition snes-button"
 										type="button"
 										aria-label="verify connection"
 										on:click={async () => {
@@ -1122,7 +1122,7 @@
 									<div class="flex-1 mr-2 justify-end flex gap-1">
 										{#if config.IMAGES_EDIT_COMFYUI_WORKFLOW}
 											<button
-												class="text-xs text-gray-700 dark:text-gray-400 underline"
+												class="text-xs text-gray-700 dark:text-gray-400 underline snes-button"
 												type="button"
 												aria-label={$i18n.t('Edit workflow.json content')}
 												on:click={() => {
@@ -1136,7 +1136,7 @@
 
 										<Tooltip content={$i18n.t('Click here to upload a workflow.json file.')}>
 											<button
-												class="text-xs text-gray-700 dark:text-gray-400 underline"
+												class="text-xs text-gray-700 dark:text-gray-400 underline snes-button"
 												type="button"
 												aria-label={$i18n.t('Click here to upload a workflow.json file.')}
 												on:click={() => {
@@ -1272,7 +1272,7 @@
 		<button
 			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center {loading
 				? ' cursor-not-allowed'
-				: ''}"
+				: ''} snes-button"
 			type="submit"
 			disabled={loading}
 		>

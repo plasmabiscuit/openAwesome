@@ -139,7 +139,7 @@
 				{/if}
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -222,7 +222,7 @@
 							/>
 
 							<button
-								class="relative rounded-full w-fit h-fit shrink-0"
+								class="relative rounded-full w-fit h-fit shrink-0 snes-button"
 								type="button"
 								on:click={() => {
 									imageInputElement.click();
@@ -304,7 +304,7 @@
 
 								<div>
 									<button
-										class=" text-xs text-gray-500"
+										class=" text-xs text-gray-500 snes-button"
 										type="button"
 										on:click={() => {
 											filterMode = filterMode === 'include' ? 'exclude' : 'include';
@@ -331,7 +331,7 @@
 													type="button"
 													on:click={() => {
 														modelIds = modelIds.filter((_, idx) => idx !== modelIdx);
-													}}
+													}} class="snes-button"
 												>
 													<Minus strokeWidth="2" className="size-3.5" />
 												</button>
@@ -366,7 +366,7 @@
 									type="button"
 									on:click={() => {
 										addModelHandler();
-									}}
+									}} class="snes-button"
 								>
 									<Plus className="size-3.5" strokeWidth="2" />
 								</button>
@@ -377,7 +377,7 @@
 					<div class="flex justify-end pt-3 text-sm font-medium gap-1.5">
 						{#if edit}
 							<button
-								class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-950 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center"
+								class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-950 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center snes-button"
 								type="button"
 								on:click={() => {
 									showDeleteConfirmDialog = true;
@@ -390,7 +390,7 @@
 						<button
 							class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-950 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center {loading
 								? ' cursor-not-allowed'
-								: ''}"
+								: ''} snes-button"
 							type="submit"
 							disabled={loading}
 						>

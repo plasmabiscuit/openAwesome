@@ -458,7 +458,7 @@
 			>
 				<Tooltip content={$i18n.t('Generate')}>
 					<button
-						class=" self-center dark:hover:text-white transition disabled:cursor-not-allowed"
+						class=" self-center dark:hover:text-white transition disabled:cursor-not-allowed snes-button"
 						id="generate-title-button"
 						disabled={generating}
 						on:click={() => {
@@ -473,7 +473,7 @@
 			<div class=" flex items-center self-center space-x-1.5">
 				<Tooltip content={$i18n.t('Archive')} className="flex items-center">
 					<button
-						class=" self-center dark:hover:text-white transition"
+						class=" self-center dark:hover:text-white transition snes-button"
 						on:click={() => {
 							archiveChatHandler(id);
 						}}
@@ -485,7 +485,7 @@
 
 				<Tooltip content={$i18n.t('Delete')}>
 					<button
-						class=" self-center dark:hover:text-white transition"
+						class=" self-center dark:hover:text-white transition snes-button"
 						on:click={() => {
 							deleteChatHandler(id);
 						}}
@@ -525,7 +525,7 @@
 				>
 					<button
 						aria-label="Chat Menu"
-						class=" self-center dark:hover:text-white transition m-0"
+						class=" self-center dark:hover:text-white transition m-0 snes-button"
 						on:click={() => {
 							dispatch('select');
 						}}
@@ -547,7 +547,7 @@
 					<!-- Shortcut support using "delete-chat-button" id -->
 					<button
 						id="delete-chat-button"
-						class="hidden"
+						class="hidden snes-button"
 						on:click={() => {
 							showDeleteConfirm = true;
 						}}

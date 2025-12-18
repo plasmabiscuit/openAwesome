@@ -228,7 +228,7 @@
 												class=" bg-white text-black border border-white rounded-full {($settings?.highContrastMode ??
 												false)
 													? ''
-													: 'group-hover:visible invisible transition'}"
+													: 'group-hover:visible invisible transition'} snes-button"
 												type="button"
 												on:click={() => {
 													editedFiles.splice(fileIdx, 1);
@@ -301,7 +301,7 @@
 						<div>
 							<button
 								id="save-edit-message-button"
-								class="px-3.5 py-1.5 bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 border border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-200 transition rounded-3xl"
+								class="px-3.5 py-1.5 bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 border border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-200 transition rounded-3xl snes-button"
 								on:click={() => {
 									editMessageConfirmHandler(false);
 								}}
@@ -313,7 +313,7 @@
 						<div class="flex space-x-1.5">
 							<button
 								id="close-edit-message-button"
-								class="px-3.5 py-1.5 bg-white dark:bg-gray-900 hover:bg-gray-100 text-gray-800 dark:text-gray-100 transition rounded-3xl"
+								class="px-3.5 py-1.5 bg-white dark:bg-gray-900 hover:bg-gray-100 text-gray-800 dark:text-gray-100 transition rounded-3xl snes-button"
 								on:click={() => {
 									cancelEditMessage();
 								}}
@@ -323,7 +323,7 @@
 
 							<button
 								id="confirm-edit-message-button"
-								class="px-3.5 py-1.5 bg-gray-900 dark:bg-white hover:bg-gray-850 text-gray-100 dark:text-gray-800 transition rounded-3xl"
+								class="px-3.5 py-1.5 bg-gray-900 dark:bg-white hover:bg-gray-850 text-gray-100 dark:text-gray-800 transition rounded-3xl snes-button"
 								on:click={() => {
 									editMessageConfirmHandler();
 								}}
@@ -366,7 +366,7 @@
 						{#if siblings.length > 1}
 							<div class="flex self-center" dir="ltr">
 								<button
-									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition"
+									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition snes-button"
 									on:click={() => {
 										showPreviousMessage(message);
 									}}
@@ -433,7 +433,7 @@
 								{/if}
 
 								<button
-									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition"
+									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition snes-button"
 									on:click={() => {
 										showNextMessage(message);
 									}}
@@ -461,7 +461,7 @@
 							<button
 								class="{($settings?.highContrastMode ?? false)
 									? ''
-									: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition edit-user-message-button"
+									: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition edit-user-message-button snes-button"
 								on:click={() => {
 									editMessageHandler();
 								}}
@@ -489,7 +489,7 @@
 							<button
 								class="{($settings?.highContrastMode ?? false)
 									? ''
-									: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+									: 'invisible group-hover:visible'} p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 								on:click={() => {
 									copyToClipboard(message.content);
 								}}
@@ -518,7 +518,7 @@
 								<button
 									class="{($settings?.highContrastMode ?? false)
 										? ''
-										: 'invisible group-hover:visible'} p-1 rounded-sm dark:hover:text-white hover:text-black transition"
+										: 'invisible group-hover:visible'} p-1 rounded-sm dark:hover:text-white hover:text-black transition snes-button"
 									on:click={() => {
 										showDeleteConfirm = true;
 									}}
@@ -546,7 +546,7 @@
 						{#if siblings.length > 1}
 							<div class="flex self-center" dir="ltr">
 								<button
-									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition"
+									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition snes-button"
 									on:click={() => {
 										showPreviousMessage(message);
 									}}
@@ -613,7 +613,7 @@
 								{/if}
 
 								<button
-									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition"
+									class="self-center p-1 hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black rounded-md transition snes-button"
 									on:click={() => {
 										showNextMessage(message);
 									}}

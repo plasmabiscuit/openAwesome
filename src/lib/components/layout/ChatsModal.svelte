@@ -80,7 +80,7 @@
 		<div class=" flex justify-between dark:text-gray-300 px-5 pt-4 pb-1">
 			<div class=" text-lg font-medium self-center">{title}</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -126,7 +126,7 @@
 					{#if query}
 						<div class="self-center pl-1.5 pr-1 translate-y-[0.5px] rounded-l-xl bg-transparent">
 							<button
-								class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+								class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition snes-button"
 								on:click={() => {
 									query = '';
 									selectedIdx = 0;
@@ -145,7 +145,7 @@
 						{#if chatList.length > 0}
 							<div class="flex text-xs font-medium mb-1.5">
 								<button
-									class="px-1.5 py-1 cursor-pointer select-none basis-3/5"
+									class="px-1.5 py-1 cursor-pointer select-none basis-3/5 snes-button"
 									on:click={() => setSortKey('title')}
 								>
 									<div class="flex gap-1.5 items-center">
@@ -167,7 +167,7 @@
 									</div>
 								</button>
 								<button
-									class="px-1.5 py-1 cursor-pointer select-none hidden sm:flex sm:basis-2/5 justify-end"
+									class="px-1.5 py-1 cursor-pointer select-none hidden sm:flex sm:basis-2/5 justify-end snes-button"
 									on:click={() => setSortKey('updated_at')}
 								>
 									<div class="flex gap-1.5 items-center">
@@ -260,7 +260,7 @@
 											{#if unarchiveHandler}
 												<Tooltip content={$i18n.t('Unarchive Chat')}>
 													<button
-														class="self-center w-fit px-1 text-sm rounded-xl"
+														class="self-center w-fit px-1 text-sm rounded-xl snes-button"
 														on:click={async (e) => {
 															e.stopImmediatePropagation();
 															e.stopPropagation();
@@ -287,7 +287,7 @@
 
 											<Tooltip content={$i18n.t('Delete Chat')}>
 												<button
-													class="self-center w-fit px-1 text-sm rounded-xl"
+													class="self-center w-fit px-1 text-sm rounded-xl snes-button"
 													on:click={async (e) => {
 														e.stopImmediatePropagation();
 														e.stopPropagation();

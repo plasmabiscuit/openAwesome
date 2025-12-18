@@ -266,7 +266,7 @@
 					{#if query}
 						<div class="self-center pl-1.5 translate-y-[0.5px] rounded-l-xl bg-transparent">
 							<button
-								class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+								class="p-0.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900 transition snes-button"
 								on:click={() => {
 									query = '';
 								}}
@@ -326,7 +326,7 @@
 															}}
 														>
 															<button
-																class="self-center w-fit text-sm p-1 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+																class="self-center w-fit text-sm p-1 dark:text-gray-300 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 																type="button"
 															>
 																<EllipsisHorizontal className="size-5" />
@@ -390,7 +390,7 @@
 			<div class="flex gap-0.5 justify-end w-full">
 				<Tooltip content={$i18n.t('Create Note')}>
 					<button
-						class="cursor-pointer p-2.5 flex rounded-full border border-gray-50 bg-white dark:border-none dark:bg-gray-850 hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-xl"
+						class="cursor-pointer p-2.5 flex rounded-full border border-gray-50 bg-white dark:border-none dark:bg-gray-850 hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-xl snes-button"
 						type="button"
 						on:click={async () => {
 							const res = await createNoteHandler(dayjs().format('YYYY-MM-DD'));

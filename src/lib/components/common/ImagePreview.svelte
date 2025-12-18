@@ -76,7 +76,7 @@
 		<div class=" absolute left-0 w-full flex justify-between select-none z-20">
 			<div>
 				<button
-					class=" p-5"
+					class=" p-5 snes-button"
 					on:pointerdown={(e) => {
 						e.stopImmediatePropagation();
 						e.preventDefault();
@@ -92,7 +92,7 @@
 
 			<div>
 				<button
-					class=" p-5 z-999"
+					class=" p-5 z-999 snes-button"
 					on:click={() => {
 						if (src.startsWith('data:image/')) {
 							const base64Data = src.split(',')[1];

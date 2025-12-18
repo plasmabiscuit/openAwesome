@@ -155,7 +155,7 @@
 											placement="top"
 										>
 											<button
-												class="p-1.5 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+												class="p-1.5 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition snes-button"
 												on:click={() => selectEmoji(emojiItem)}
 											>
 												<img

@@ -39,7 +39,7 @@
 
 		{#if value}
 			<button
-				class="outline-none"
+				class="outline-none snes-button"
 				on:click={() => {
 					value = '';
 					onChange(value);

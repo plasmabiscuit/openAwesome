@@ -891,7 +891,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 									>
 										<button
 											id="sidebar-toggle-button"
-											class=" cursor-pointer flex rounded-lg hover:bg-gray-100 dark:hover:bg-gray-850 transition cursor-"
+											class=" cursor-pointer flex rounded-lg hover:bg-gray-100 dark:hover:bg-gray-850 transition cursor- snes-button"
 											on:click={() => {
 												showSidebar.set(!$showSidebar);
 											}}
@@ -933,7 +933,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 								>
 									<Tooltip content={$i18n.t('Generate')}>
 										<button
-											class=" self-center dark:hover:text-white transition"
+											class=" self-center dark:hover:text-white transition snes-button"
 											id="generate-title-button"
 											disabled={(note?.user_id !== $user?.id && $user?.role !== 'admin') ||
 												titleGenerating}
@@ -960,7 +960,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 									<div>
 										<div class="flex items-center gap-0.5 self-center min-w-fit" dir="ltr">
 											<button
-												class="self-center p-1 hover:enabled:bg-black/5 dark:hover:enabled:bg-white/5 dark:hover:enabled:text-white hover:enabled:text-black rounded-md transition disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:text-gray-500"
+												class="self-center p-1 hover:enabled:bg-black/5 dark:hover:enabled:bg-white/5 dark:hover:enabled:text-white hover:enabled:text-black rounded-md transition disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:text-gray-500 snes-button"
 												on:click={() => {
 													editor.chain().focus().undo().run();
 													// versionNavigateHandler('prev');
@@ -971,7 +971,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 											</button>
 
 											<button
-												class="self-center p-1 hover:enabled:bg-black/5 dark:hover:enabled:bg-white/5 dark:hover:enabled:text-white hover:enabled:text-black rounded-md transition disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:text-gray-500"
+												class="self-center p-1 hover:enabled:bg-black/5 dark:hover:enabled:bg-white/5 dark:hover:enabled:text-white hover:enabled:text-black rounded-md transition disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:text-gray-500 snes-button"
 												on:click={() => {
 													editor.chain().focus().redo().run();
 													// versionNavigateHandler('next');
@@ -986,7 +986,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 
 								<Tooltip placement="top" content={$i18n.t('Chat')} className="cursor-pointer">
 									<button
-										class="p-1.5 bg-transparent hover:bg-white/5 transition rounded-lg"
+										class="p-1.5 bg-transparent hover:bg-white/5 transition rounded-lg snes-button"
 										on:click={() => {
 											if (showPanel && selectedPanel === 'chat') {
 												showPanel = false;
@@ -1004,7 +1004,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 
 								<Tooltip placement="top" content={$i18n.t('Controls')} className="cursor-pointer">
 									<button
-										class="p-1.5 bg-transparent hover:bg-white/5 transition rounded-lg"
+										class="p-1.5 bg-transparent hover:bg-white/5 transition rounded-lg snes-button"
 										on:click={() => {
 											if (showPanel && selectedPanel === 'settings') {
 												showPanel = false;
@@ -1073,7 +1073,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 							<div
 								class="flex gap-1 items-center text-xs font-medium text-gray-500 dark:text-gray-500 w-fit"
 							>
-								<button class=" flex items-center gap-1 w-fit py-1 px-1.5 rounded-lg min-w-fit">
+								<button class=" flex items-center gap-1 w-fit py-1 px-1.5 rounded-lg min-w-fit snes-button">
 									<Calendar className="size-3.5" strokeWidth="2" />
 
 									<!-- check for same date, yesterday, last week, and other -->
@@ -1100,7 +1100,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 								</button>
 
 								<button
-									class=" flex items-center gap-1 w-fit py-1 px-1.5 rounded-lg min-w-fit"
+									class=" flex items-center gap-1 w-fit py-1 px-1.5 rounded-lg min-w-fit snes-button"
 									on:click={() => {
 										showAccessControlModal = true;
 									}}
@@ -1331,7 +1331,7 @@ Provide the enhanced notes in markdown format. Use markdown syntax for headings,
 						<Tooltip content={$i18n.t('AI')} placement="top">
 							{#if editing}
 								<button
-									class="p-2 flex justify-center items-center hover:bg-gray-50 dark:hover:bg-gray-800 rounded-full transition shrink-0"
+									class="p-2 flex justify-center items-center hover:bg-gray-50 dark:hover:bg-gray-800 rounded-full transition shrink-0 snes-button"
 									on:click={() => {
 										stopResponseHandler();
 									}}

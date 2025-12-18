@@ -88,7 +88,7 @@
 			</div>
 
 			<button
-				class="pr-3"
+				class="pr-3 snes-button"
 				type="button"
 				on:click={() => {
 					banners.splice(bannerIdx, 1);

@@ -24,7 +24,7 @@
 			</div>
 
 			<button
-				class="self-center pointer-events-auto p-1 rounded-full bg-white dark:bg-gray-850"
+				class="self-center pointer-events-auto p-1 rounded-full bg-white dark:bg-gray-850 snes-button"
 				on:click={() => {
 					showControls.set(false);
 					showEmbeds.set(false);

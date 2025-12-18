@@ -75,7 +75,7 @@
 					>
 						<Tooltip content={$i18n.t('Add Model')}>
 							<button
-								class=" "
+								class="  snes-button"
 								{disabled}
 								on:click={() => {
 									selectedModels = [...selectedModels, ''];
@@ -106,7 +106,7 @@
 									selectedModels.splice(selectedModelIdx, 1);
 									selectedModels = selectedModels;
 								}}
-								aria-label="Remove Model"
+								aria-label="Remove Model" class="snes-button"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -131,6 +131,6 @@
 	<div
 		class="relative text-left mt-[1px] ml-1 text-[0.7rem] text-gray-600 dark:text-gray-400 font-primary"
 	>
-		<button on:click={saveDefaultModel}> {$i18n.t('Set as default')}</button>
+		<button on:click={saveDefaultModel} class="snes-button"> {$i18n.t('Set as default')}</button>
 	</div>
 {/if}

@@ -23,7 +23,7 @@
 <Modal size="full" containerClassName="" className="h-full bg-white dark:bg-gray-900" bind:show>
 	<div class="absolute top-0 right-0 p-5">
 		<button
-			class="self-center dark:text-white"
+			class="self-center dark:text-white snes-button"
 			type="button"
 			on:click={() => {
 				show = false;
@@ -99,7 +99,7 @@
 					{:else}
 						<Tooltip content={$i18n.t('Voice Input')}>
 							<button
-								class=" p-2 bg-gray-50 text-gray-700 dark:bg-gray-700 dark:text-white transition rounded-full"
+								class=" p-2 bg-gray-50 text-gray-700 dark:bg-gray-700 dark:text-white transition rounded-full snes-button"
 								type="button"
 								on:click={async () => {
 									try {
@@ -134,7 +134,7 @@
 				<div class=" shrink-0">
 					<Tooltip content={$i18n.t('Save')}>
 						<button
-							class=" px-3.5 py-2 bg-black text-white dark:bg-white dark:text-black transition rounded-full"
+							class=" px-3.5 py-2 bg-black text-white dark:bg-white dark:text-black transition rounded-full snes-button"
 							type="submit"
 						>
 							{$i18n.t('Save')}

@@ -167,7 +167,7 @@
 
 									<div class="w-full flex justify-end items-center gap-0.5">
 										<button
-											class=""
+											class=" snes-button"
 											type="button"
 											on:click={() => {
 												if (accessRoles.includes('write')) {
@@ -193,7 +193,7 @@
 										</button>
 
 										<button
-											class=" rounded-full p-1 hover:bg-gray-100 dark:hover:bg-gray-850 transition"
+											class=" rounded-full p-1 hover:bg-gray-100 dark:hover:bg-gray-850 transition snes-button"
 											type="button"
 											on:click={() => {
 												accessControl.read.group_ids = (

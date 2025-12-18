@@ -190,7 +190,7 @@
 			<div class=" absolute top-1 right-1.5 z-20 invisible group-hover:visible flex gap-0.5">
 				<Tooltip content={$i18n.t('Copy')}>
 					<button
-						class="p-1 rounded-lg bg-transparent transition"
+						class="p-1 rounded-lg bg-transparent transition snes-button"
 						on:click={(e) => {
 							e.stopPropagation();
 							copyToClipboard(token.raw.trim(), null, $settings?.copyFormatted ?? false);
@@ -202,7 +202,7 @@
 
 				<Tooltip content={$i18n.t('Export to CSV')}>
 					<button
-						class="p-1 rounded-lg bg-transparent transition"
+						class="p-1 rounded-lg bg-transparent transition snes-button"
 						on:click={(e) => {
 							e.stopPropagation();
 							exportTableToCSVHandler(token, tokenIdx);

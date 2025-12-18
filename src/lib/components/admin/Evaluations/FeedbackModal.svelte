@@ -46,7 +46,7 @@
 				<div class="text-lg font-medium self-center">
 					{$i18n.t('Feedback Details')}
 				</div>
-				<button class="self-center" on:click={close} aria-label="Close">
+				<button class="self-center snes-button" on:click={close} aria-label="Close">
 					<XMark className={'size-5'} />
 				</button>
 			</div>
@@ -131,7 +131,7 @@
 
 						<div class="flex justify-end pt-2">
 							<button
-								class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+								class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 								type="button"
 								on:click={close}
 							>

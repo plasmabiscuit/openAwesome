@@ -271,7 +271,7 @@
 							/>
 
 							<button
-								class="w-full text-sm font-medium py-2 bg-transparent hover:bg-gray-100 border border-dashed dark:border-gray-850 dark:hover:bg-gray-850 text-center rounded-xl"
+								class="w-full text-sm font-medium py-2 bg-transparent hover:bg-gray-100 border border-dashed dark:border-gray-850 dark:hover:bg-gray-850 text-center rounded-xl snes-button"
 								type="button"
 								on:click={() => {
 									document.getElementById('pipelines-upload-input')?.click();
@@ -285,7 +285,7 @@
 							</button>
 						</div>
 						<button
-							class="px-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
+							class="px-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition snes-button"
 							on:click={() => {
 								uploadPipelineHandler();
 							}}
@@ -354,7 +354,7 @@
 							/>
 						</div>
 						<button
-							class="px-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
+							class="px-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition snes-button"
 							on:click={() => {
 								addPipelineHandler();
 							}}
@@ -449,7 +449,7 @@
 									</div>
 
 									<button
-										class="px-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
+										class="px-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition snes-button"
 										on:click={() => {
 											deletePipelineHandler();
 										}}
@@ -482,7 +482,7 @@
 													</div>
 
 													<button
-														class="p-1 px-3 text-xs flex rounded-sm transition"
+														class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 														type="button"
 														on:click={() => {
 															valves[property] = (valves[property] ?? null) === null ? '' : null;
@@ -569,7 +569,7 @@
 	{#if PIPELINES_LIST !== null && PIPELINES_LIST.length > 0}
 		<div class="flex justify-end pt-3 text-sm font-medium">
 			<button
-				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+				class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 				type="submit"
 			>
 				{$i18n.t('Save')}

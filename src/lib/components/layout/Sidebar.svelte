@@ -557,7 +557,7 @@
 
 <button
 	id="sidebar-new-chat-button"
-	class="hidden"
+	class="hidden snes-button"
 	on:click={() => {
 		goto('/');
 		newChatHandler();
@@ -570,7 +570,7 @@
 		id="sidebar"
 	>
 		<button
-			class="flex flex-col flex-1 {isWindows ? 'cursor-pointer' : 'cursor-[e-resize]'}"
+			class="flex flex-col flex-1 {isWindows ? 'cursor-pointer' : 'cursor-[e-resize]'} snes-button"
 			on:click={async () => {
 				showSidebar.set(!$showSidebar);
 			}}
@@ -583,7 +583,7 @@
 					<button
 						class="flex rounded-xl hover:bg-gray-100 dark:hover:bg-gray-850 transition group {isWindows
 							? 'cursor-pointer'
-							: 'cursor-[e-resize]'}"
+							: 'cursor-[e-resize]'} snes-button"
 						aria-label={$showSidebar ? $i18n.t('Close Sidebar') : $i18n.t('Open Sidebar')}
 					>
 						<div class=" self-center flex items-center justify-center size-9">
@@ -625,7 +625,7 @@
 				<div>
 					<Tooltip content={$i18n.t('Search')} placement="right">
 						<button
-							class=" cursor-pointer flex rounded-xl hover:bg-gray-100 dark:hover:bg-gray-850 transition group"
+							class=" cursor-pointer flex rounded-xl hover:bg-gray-100 dark:hover:bg-gray-850 transition group snes-button"
 							on:click={(e) => {
 								e.stopImmediatePropagation();
 								e.preventDefault();
@@ -805,7 +805,7 @@
 					<button
 						class="flex rounded-xl size-8.5 justify-center items-center hover:bg-gray-100/50 dark:hover:bg-gray-850/50 transition {isWindows
 							? 'cursor-pointer'
-							: 'cursor-[w-resize]'}"
+							: 'cursor-[w-resize]'} snes-button"
 						on:click={() => {
 							showSidebar.set(!$showSidebar);
 						}}
@@ -859,7 +859,7 @@
 					<div class="px-[0.4375rem] flex justify-center text-gray-800 dark:text-gray-200">
 						<button
 							id="sidebar-search-button"
-							class="group grow flex items-center space-x-3 rounded-2xl px-2.5 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition outline-none"
+							class="group grow flex items-center space-x-3 rounded-2xl px-2.5 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition outline-none snes-button"
 							on:click={() => {
 								showSearch.set(true);
 							}}

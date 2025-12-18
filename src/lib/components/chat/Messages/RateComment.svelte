@@ -122,7 +122,7 @@
 		<button
 			on:click={() => {
 				show = false;
-			}}
+			}} class="snes-button"
 		>
 			<XMark className={'size-4'} />
 		</button>
@@ -137,7 +137,7 @@
 						class="size-7 text-sm border border-gray-100/30 dark:border-gray-850/30 hover:bg-gray-50 dark:hover:bg-gray-850 {detailedRating ===
 						rating
 							? 'bg-gray-100 dark:bg-gray-800'
-							: ''} transition rounded-full disabled:cursor-not-allowed disabled:text-gray-500 disabled:bg-white dark:disabled:bg-gray-900"
+							: ''} transition rounded-full disabled:cursor-not-allowed disabled:text-gray-500 disabled:bg-white dark:disabled:bg-gray-900 snes-button"
 						on:click={() => {
 							detailedRating = rating;
 						}}
@@ -170,7 +170,7 @@
 						class="px-3 py-0.5 border border-gray-100/30 dark:border-gray-850/30 hover:bg-gray-50 dark:hover:bg-gray-850 {selectedReason ===
 						reason
 							? 'bg-gray-100 dark:bg-gray-800'
-							: ''} transition rounded-xl"
+							: ''} transition rounded-xl snes-button"
 						on:click={() => {
 							selectedReason = reason;
 						}}
@@ -240,7 +240,7 @@
 		</div>
 
 		<button
-			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			on:click={() => {
 				saveHandler();
 			}}

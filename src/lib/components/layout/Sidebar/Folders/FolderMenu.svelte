@@ -33,7 +33,7 @@
 			on:click={(e) => {
 				e.stopPropagation();
 				show = !show;
-			}}
+			}} class="snes-button"
 		>
 			<slot />
 		</button>

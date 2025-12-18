@@ -390,7 +390,7 @@
 			<div class="flex items-center gap-3">
 				<div class="flex gap-1.5 text-xs justify-end">
 					<button
-						class=" hover:underline"
+						class=" hover:underline snes-button"
 						type="button"
 						on:click={() => {
 							inputElement?.click();
@@ -399,12 +399,12 @@
 						{$i18n.t('Import')}
 					</button>
 
-					<button class=" hover:underline" type="button" on:click={exportHandler}>
+					<button class=" hover:underline snes-button" type="button" on:click={exportHandler}>
 						{$i18n.t('Export')}
 					</button>
 				</div>
 				<button
-					class="self-center"
+					class="self-center snes-button"
 					aria-label={$i18n.t('Close Configure Connection Modal')}
 					on:click={() => {
 						show = false;
@@ -446,7 +446,7 @@
 												type = ['', 'openapi'].includes(type) ? 'mcp' : 'openapi';
 											}}
 											type="button"
-											class=" text-xs text-gray-700 dark:text-gray-300"
+											class=" text-xs text-gray-700 dark:text-gray-300 snes-button"
 										>
 											{#if ['', 'openapi'].includes(type)}
 												{$i18n.t('OpenAPI')}
@@ -486,7 +486,7 @@
 										className="shrink-0 flex items-center mr-1"
 									>
 										<button
-											class="self-center p-1 bg-transparent hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 rounded-lg transition"
+											class="self-center p-1 bg-transparent hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 rounded-lg transition snes-button"
 											on:click={() => {
 												verifyHandler();
 											}}
@@ -612,7 +612,7 @@
 														: $i18n.t('Register Client')}
 												>
 													<button
-														class=" text-xs underline dark:text-gray-500 dark:hover:text-gray-200 text-gray-700 hover:text-gray-900 transition"
+														class=" text-xs underline dark:text-gray-500 dark:hover:text-gray-200 text-gray-700 hover:text-gray-900 transition snes-button"
 														type="button"
 														on:click={() => {
 															registerOAuthClientHandler();
@@ -848,7 +848,7 @@
 						<div class="flex gap-1.5">
 							{#if edit}
 								<button
-									class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-900 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center"
+									class="px-3.5 py-1.5 text-sm font-medium dark:bg-black dark:hover:bg-gray-900 dark:text-white bg-white text-black hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center snes-button"
 									type="button"
 									on:click={() => {
 										onDelete();
@@ -862,7 +862,7 @@
 							<button
 								class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full flex flex-row space-x-1 items-center {loading
 									? ' cursor-not-allowed'
-									: ''}"
+									: ''} snes-button"
 								type="submit"
 								disabled={loading}
 							>

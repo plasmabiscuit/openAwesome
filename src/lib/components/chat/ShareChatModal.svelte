@@ -86,7 +86,7 @@
 		<div class=" flex justify-between dark:text-gray-300 px-5 pt-4 pb-0.5">
 			<div class=" text-lg font-medium self-center">{$i18n.t('Share Chat')}</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}
@@ -105,7 +105,7 @@
 						>
 						{$i18n.t('Click here to')}
 						<button
-							class="underline"
+							class="underline snes-button"
 							on:click={async () => {
 								const res = await deleteSharedChatById(localStorage.token, chatId);
 
@@ -128,7 +128,7 @@
 						<div class="flex gap-1">
 							{#if $config?.features.enable_community_sharing}
 								<button
-									class="self-center flex items-center gap-1 px-3.5 py-2 text-sm font-medium bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:text-white dark:hover:bg-gray-800 transition rounded-full"
+									class="self-center flex items-center gap-1 px-3.5 py-2 text-sm font-medium bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:text-white dark:hover:bg-gray-800 transition rounded-full snes-button"
 									type="button"
 									on:click={() => {
 										shareChat();
@@ -140,7 +140,7 @@
 							{/if}
 
 							<button
-								class="self-center flex items-center gap-1 px-3.5 py-2 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+								class="self-center flex items-center gap-1 px-3.5 py-2 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 								type="button"
 								id="copy-and-share-chat-button"
 								on:click={async () => {

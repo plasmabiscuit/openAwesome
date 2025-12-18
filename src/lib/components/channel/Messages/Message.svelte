@@ -105,7 +105,7 @@
 						>
 							<Tooltip content={$i18n.t('Add Reaction')}>
 								<button
-									class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1"
+									class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1 snes-button"
 									on:click={() => {
 										showButtons = true;
 									}}
@@ -119,7 +119,7 @@
 					{#if onReply}
 						<Tooltip content={$i18n.t('Reply')}>
 							<button
-								class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-0.5"
+								class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-0.5 snes-button"
 								on:click={() => {
 									onReply(message);
 								}}
@@ -131,7 +131,7 @@
 
 					<Tooltip content={message?.is_pinned ? $i18n.t('Unpin') : $i18n.t('Pin')}>
 						<button
-							class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1"
+							class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1 snes-button"
 							on:click={() => {
 								onPin(message);
 							}}
@@ -147,7 +147,7 @@
 					{#if !thread && onThread}
 						<Tooltip content={$i18n.t('Reply in Thread')}>
 							<button
-								class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1"
+								class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1 snes-button"
 								on:click={() => {
 									onThread(message.id);
 								}}
@@ -161,7 +161,7 @@
 						{#if onEdit}
 							<Tooltip content={$i18n.t('Edit')}>
 								<button
-									class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1"
+									class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1 snes-button"
 									on:click={() => {
 										edit = true;
 										editedContent = message.content;
@@ -175,7 +175,7 @@
 						{#if onDelete}
 							<Tooltip content={$i18n.t('Delete')}>
 								<button
-									class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1"
+									class="hover:bg-gray-100 dark:hover:bg-gray-800 transition rounded-lg p-1 snes-button"
 									on:click={() => (showDeleteConfirmDialog = true)}
 								>
 									<GarbageBin />
@@ -203,7 +203,7 @@
 				></div>
 
 				<button
-					class="ml-12 flex items-center space-x-2 relative z-0"
+					class="ml-12 flex items-center space-x-2 relative z-0 snes-button"
 					on:click={() => {
 						const messageElement = document.getElementById(
 							`message-${message.reply_to_message.id}`
@@ -357,7 +357,7 @@
 							<div class="flex space-x-1.5">
 								<button
 									id="close-edit-message-button"
-									class="px-3.5 py-1.5 bg-white dark:bg-gray-900 hover:bg-gray-100 text-gray-800 dark:text-gray-100 transition rounded-3xl"
+									class="px-3.5 py-1.5 bg-white dark:bg-gray-900 hover:bg-gray-100 text-gray-800 dark:text-gray-100 transition rounded-3xl snes-button"
 									on:click={() => {
 										edit = false;
 										editedContent = null;
@@ -368,7 +368,7 @@
 
 								<button
 									id="confirm-edit-message-button"
-									class="px-3.5 py-1.5 bg-gray-900 dark:bg-white hover:bg-gray-850 text-gray-100 dark:text-gray-800 transition rounded-3xl"
+									class="px-3.5 py-1.5 bg-gray-900 dark:bg-white hover:bg-gray-850 text-gray-100 dark:text-gray-800 transition rounded-3xl snes-button"
 									on:click={async () => {
 										onEdit(editedContent);
 										edit = false;
@@ -438,7 +438,7 @@
 												.map((u) => u.id)
 												.includes($user?.id)
 												? ' bg-blue-300/10 outline outline-blue-500/50 outline-1'
-												: 'bg-gray-300/10 dark:bg-gray-500/10 hover:outline hover:outline-gray-700/30 dark:hover:outline-gray-300/30 hover:outline-1'}"
+												: 'bg-gray-300/10 dark:bg-gray-500/10 hover:outline hover:outline-gray-700/30 dark:hover:outline-gray-300/30 hover:outline-1'} snes-button"
 											on:click={() => {
 												if (onReaction) {
 													onReaction(reaction.name);
@@ -478,7 +478,7 @@
 					{#if !thread && message.reply_count > 0}
 						<div class="flex items-center gap-1.5 -mt-0.5 mb-1.5">
 							<button
-								class="flex items-center text-xs py-1 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition"
+								class="flex items-center text-xs py-1 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition snes-button"
 								on:click={() => {
 									onThread(message.id);
 								}}

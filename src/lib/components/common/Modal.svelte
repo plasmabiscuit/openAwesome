@@ -104,7 +104,7 @@
 		<div
 			class="m-auto max-w-full {sizeToWidth(size)} {size !== 'full'
 				? 'mx-2'
-				: ''} shadow-3xl min-h-fit scrollbar-hidden {className} border border-white dark:border-gray-850"
+				: ''} shadow-3xl min-h-fit scrollbar-hidden {className} border border-white dark:border-gray-850 snes-container"
 			in:flyAndScale
 			on:mousedown={(e) => {
 				e.stopPropagation();

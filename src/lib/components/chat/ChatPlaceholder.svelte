@@ -42,7 +42,7 @@
 					<button
 						on:click={() => {
 							selectedModelIdx = modelIdx;
-						}}
+						}} class="snes-button"
 					>
 						<Tooltip
 							content={marked.parse(

@@ -65,7 +65,7 @@
 			class="px-0.5 py-1 min-w-fit rounded-lg lg:flex-none flex text-right transition {selectedTab ===
 			'overview'
 				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} snes-button"
 			on:click={() => {
 				goto('/admin/users/overview');
 			}}
@@ -90,7 +90,7 @@
 			class="px-0.5 py-1 min-w-fit rounded-lg lg:flex-none flex text-right transition {selectedTab ===
 			'groups'
 				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} snes-button"
 			on:click={() => {
 				goto('/admin/users/groups');
 			}}

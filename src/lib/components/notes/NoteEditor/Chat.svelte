@@ -328,7 +328,7 @@ Based on the user's instruction, update and enhance the existing notes or select
 <div class="flex items-center mb-1.5 pt-1.5">
 	<div class="flex items-center mr-1">
 		<button
-			class="p-0.5 bg-transparent transition rounded-lg"
+			class="p-0.5 bg-transparent transition rounded-lg snes-button"
 			on:click={() => {
 				show = !show;
 			}}
@@ -405,7 +405,7 @@ Based on the user's instruction, update and enhance the existing notes or select
 										type="button"
 										class="px-2 @xl:px-2.5 py-2 flex gap-1.5 items-center text-sm rounded-full transition-colors duration-300 focus:outline-hidden max-w-full overflow-hidden hover:bg-gray-50 dark:hover:bg-gray-800 {editEnabled
 											? ' text-sky-500 dark:text-sky-300 bg-sky-50 dark:bg-sky-200/5'
-											: 'bg-transparent text-gray-600 dark:text-gray-300 '} disabled:opacity-50 disabled:pointer-events-none"
+											: 'bg-transparent text-gray-600 dark:text-gray-300 '} disabled:opacity-50 disabled:pointer-events-none snes-button"
 									>
 										<PencilSquare className="size-4" strokeWidth="1.75" />
 										<span

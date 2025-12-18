@@ -53,7 +53,7 @@
 								type="button"
 								on:click={() => {
 									modelIds = modelIds.filter((_, idx) => idx !== modelIdx);
-								}}
+								}} class="snes-button"
 							>
 								<Minus strokeWidth="2" className="size-3.5" />
 							</button>

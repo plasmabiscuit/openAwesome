@@ -29,7 +29,7 @@
 			on:click={() => editor?.chain().focus().toggleHeading({ level: 1 }).run()}
 			class="{editor?.isActive('heading', { level: 1 })
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<H1 />
@@ -41,7 +41,7 @@
 			on:click={() => editor?.chain().focus().toggleHeading({ level: 2 }).run()}
 			class="{editor?.isActive('heading', { level: 2 })
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<H2 />
@@ -53,7 +53,7 @@
 			on:click={() => editor?.chain().focus().toggleHeading({ level: 3 }).run()}
 			class="{editor?.isActive('heading', { level: 3 })
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<H3 />
@@ -66,7 +66,7 @@
 				on:click={() => {
 					editor?.commands.liftListItem(editor?.isActive('taskList') ? 'taskItem' : 'listItem');
 				}}
-				class="hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				class="hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 				type="button"
 			>
 				<ArrowLeftTag />
@@ -76,7 +76,7 @@
 			<button
 				on:click={() =>
 					editor?.commands.sinkListItem(editor?.isActive('taskList') ? 'taskItem' : 'listItem')}
-				class="hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				class="hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 				type="button"
 			>
 				<ArrowRightTag />
@@ -89,7 +89,7 @@
 			on:click={() => editor?.chain().focus().toggleBulletList().run()}
 			class="{editor?.isActive('bulletList')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<ListBullet />
@@ -101,7 +101,7 @@
 			on:click={() => editor?.chain().focus().toggleOrderedList().run()}
 			class="{editor?.isActive('orderedList')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<NumberedList />
@@ -113,7 +113,7 @@
 			on:click={() => editor?.chain().focus().toggleTaskList().run()}
 			class="{editor?.isActive('taskList')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<CheckBox />
@@ -125,7 +125,7 @@
 			on:click={() => editor?.chain().focus().toggleBold().run()}
 			class="{editor?.isActive('bold')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<Bold />
@@ -137,7 +137,7 @@
 			on:click={() => editor?.chain().focus().toggleItalic().run()}
 			class="{editor?.isActive('italic')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<Italic />
@@ -149,7 +149,7 @@
 			on:click={() => editor?.chain().focus().toggleUnderline().run()}
 			class="{editor?.isActive('underline')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<Underline />
@@ -161,7 +161,7 @@
 			on:click={() => editor?.chain().focus().toggleStrike().run()}
 			class="{editor?.isActive('strike')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<Strikethrough />
@@ -173,7 +173,7 @@
 			on:click={() => editor?.chain().focus().toggleCodeBlock().run()}
 			class="{editor?.isActive('codeBlock')
 				? 'bg-gray-50 dark:bg-gray-700'
-				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all"
+				: ''} hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg p-1.5 transition-all snes-button"
 			type="button"
 		>
 			<CodeBracket />

@@ -115,7 +115,7 @@
 
 						<div class="self-center shrink-0">
 							<button
-								class="bg-gray-50 hover:bg-gray-100 text-black dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-white transition px-2 py-1 rounded-full flex gap-1 items-center"
+								class="bg-gray-50 hover:bg-gray-100 text-black dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-white transition px-2 py-1 rounded-full flex gap-1 items-center snes-button"
 								type="button"
 								on:click={() => {
 									showAccessControlModal = true;
@@ -184,7 +184,7 @@
 			<button
 				class=" text-sm w-full lg:w-fit px-4 py-2 transition rounded-xl {loading
 					? ' cursor-not-allowed bg-black hover:bg-gray-900 text-white dark:bg-white dark:hover:bg-gray-100 dark:text-black'
-					: 'bg-black hover:bg-gray-900 text-white dark:bg-white dark:hover:bg-gray-100 dark:text-black'} flex w-full justify-center"
+					: 'bg-black hover:bg-gray-900 text-white dark:bg-white dark:hover:bg-gray-100 dark:text-black'} flex w-full justify-center snes-button"
 				type="submit"
 				disabled={loading}
 			>

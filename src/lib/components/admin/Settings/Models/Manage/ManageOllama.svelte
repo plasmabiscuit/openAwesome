@@ -611,7 +611,7 @@
 						<div>
 							<Tooltip content="Update All Models" placement="top">
 								<button
-									class="flex gap-2 items-center bg-transparent rounded-lg transition"
+									class="flex gap-2 items-center bg-transparent rounded-lg transition snes-button"
 									on:click={() => {
 										updateModelsHandler();
 									}}
@@ -645,7 +645,7 @@
 						</div>
 						<Tooltip content={$i18n.t('Pull Model')} placement="top">
 							<button
-								class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
+								class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition snes-button"
 								on:click={() => {
 									pullModelHandler();
 								}}
@@ -715,7 +715,7 @@
 
 							<Tooltip content={$i18n.t('Cancel')}>
 								<button
-									class="text-gray-800 dark:text-gray-100"
+									class="text-gray-800 dark:text-gray-100 snes-button"
 									on:click={() => {
 										cancelUpdateModelHandler(updateModelId);
 									}}
@@ -763,7 +763,7 @@
 
 											<Tooltip content={$i18n.t('Cancel')}>
 												<button
-													class="text-gray-800 dark:text-gray-100"
+													class="text-gray-800 dark:text-gray-100 snes-button"
 													on:click={() => {
 														cancelModelPullHandler(model);
 													}}
@@ -822,7 +822,7 @@
 						</div>
 						<Tooltip content={$i18n.t('Delete Model')} placement="top">
 							<button
-								class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
+								class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition snes-button"
 								on:click={() => {
 									showModelDeleteConfirm = true;
 								}}
@@ -870,7 +870,7 @@
 						<div class="flex self-start">
 							<Tooltip content={$i18n.t('Create Model')} placement="top">
 								<button
-									class="px-2.5 py-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition disabled:cursor-not-allowed"
+									class="px-2.5 py-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition disabled:cursor-not-allowed snes-button"
 									on:click={() => {
 										createModelHandler();
 									}}
@@ -924,7 +924,7 @@
 					<div class="flex justify-between items-center text-xs">
 						<div class=" text-sm font-medium">{$i18n.t('Experimental')}</div>
 						<button
-							class=" text-xs font-medium text-gray-500"
+							class=" text-xs font-medium text-gray-500 snes-button"
 							type="button"
 							on:click={() => {
 								showExperimentalOllama = !showExperimentalOllama;
@@ -943,7 +943,7 @@
 							<div class="  text-sm font-medium">{$i18n.t('Upload a GGUF model')}</div>
 
 							<button
-								class="p-1 px-3 text-xs flex rounded-sm transition"
+								class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 								on:click={() => {
 									if (modelUploadMode === 'file') {
 										modelUploadMode = 'url';
@@ -980,7 +980,7 @@
 
 										<button
 											type="button"
-											class="w-full rounded-lg text-left py-2 px-4 bg-gray-50 dark:text-gray-300 dark:bg-gray-850"
+											class="w-full rounded-lg text-left py-2 px-4 bg-gray-50 dark:text-gray-300 dark:bg-gray-850 snes-button"
 											on:click={() => {
 												modelUploadInputElement.click();
 											}}
@@ -1011,7 +1011,7 @@
 							{#if (modelUploadMode === 'file' && modelInputFile && modelInputFile.length > 0) || (modelUploadMode === 'url' && modelFileUrl !== '')}
 								<Tooltip content={$i18n.t('Upload Model')} placement="top">
 									<button
-										class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg disabled:cursor-not-allowed transition"
+										class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg disabled:cursor-not-allowed transition snes-button"
 										type="submit"
 										disabled={modelLoading}
 									>

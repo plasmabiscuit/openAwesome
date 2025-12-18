@@ -695,7 +695,7 @@
 		{#if camera}
 			<button
 				type="button"
-				class="flex justify-center items-center w-full h-20 min-h-20"
+				class="flex justify-center items-center w-full h-20 min-h-20 snes-button"
 				on:click={() => {
 					if (assistantSpeaking) {
 						stopAllAudio();
@@ -776,7 +776,7 @@
 						if (assistantSpeaking) {
 							stopAllAudio();
 						}
-					}}
+					}} class="snes-button"
 				>
 					{#if emoji}
 						<div
@@ -856,7 +856,7 @@
 					<div class=" absolute top-4 md:top-8 left-4">
 						<button
 							type="button"
-							class="p-1.5 text-white cursor-pointer backdrop-blur-xl bg-black/10 rounded-full"
+							class="p-1.5 text-white cursor-pointer backdrop-blur-xl bg-black/10 rounded-full snes-button"
 							on:click={() => {
 								stopCamera();
 							}}
@@ -889,7 +889,7 @@
 							await startVideoStream();
 						}}
 					>
-						<button class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900" type="button">
+						<button class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900 snes-button" type="button">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
@@ -907,7 +907,7 @@
 				{:else}
 					<Tooltip content={$i18n.t('Camera')}>
 						<button
-							class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900"
+							class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900 snes-button"
 							type="button"
 							on:click={async () => {
 								await navigator.mediaDevices.getUserMedia({ video: true });
@@ -945,7 +945,7 @@
 						if (assistantSpeaking) {
 							stopAllAudio();
 						}
-					}}
+					}} class="snes-button"
 				>
 					<div class=" line-clamp-1 text-sm font-medium">
 						{#if loading}
@@ -961,7 +961,7 @@
 
 			<div>
 				<button
-					class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900"
+					class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900 snes-button"
 					on:click={async () => {
 						await stopAudioStream();
 						await stopVideoStream();

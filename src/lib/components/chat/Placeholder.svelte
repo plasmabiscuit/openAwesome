@@ -118,7 +118,7 @@
 										})}
 										on:click={() => {
 											selectedModelIdx = modelIdx;
-										}}
+										}} class="snes-button"
 									>
 										<img
 											src={`${WEBUI_API_BASE_URL}/models/model/profile/image?id=${model?.id}&lang=${$i18n.language}`}

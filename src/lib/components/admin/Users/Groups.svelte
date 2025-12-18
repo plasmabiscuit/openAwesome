@@ -132,7 +132,7 @@
 				<div>
 					<Tooltip content={$i18n.t('Create Group')}>
 						<button
-							class=" p-2 rounded-xl hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 transition font-medium text-sm flex items-center space-x-1"
+							class=" p-2 rounded-xl hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 transition font-medium text-sm flex items-center space-x-1 snes-button"
 							on:click={() => {
 								showAddGroupModal = !showAddGroupModal;
 							}}
@@ -158,7 +158,7 @@
 
 				<div class="mt-3">
 					<button
-						class=" px-4 py-1.5 text-sm rounded-full bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition font-medium flex items-center space-x-1"
+						class=" px-4 py-1.5 text-sm rounded-full bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition font-medium flex items-center space-x-1 snes-button"
 						aria-label={$i18n.t('Create Group')}
 						on:click={() => {
 							showAddGroupModal = true;
@@ -197,7 +197,7 @@
 		/>
 
 		<button
-			class="flex items-center justify-between rounded-lg w-full transition pt-1"
+			class="flex items-center justify-between rounded-lg w-full transition pt-1 snes-button"
 			on:click={() => {
 				showDefaultPermissionsModal = true;
 			}}

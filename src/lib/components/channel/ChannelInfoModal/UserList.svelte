@@ -106,7 +106,7 @@
 				<div class="">
 					<button
 						type="button"
-						class=" px-3 py-1.5 gap-1 rounded-xl bg-black dark:text-white dark:bg-gray-850/50 text-black transition font-medium text-xs flex items-center justify-center"
+						class=" px-3 py-1.5 gap-1 rounded-xl bg-black dark:text-white dark:bg-gray-850/50 text-black transition font-medium text-xs flex items-center justify-center snes-button"
 						on:click={onAdd}
 					>
 						<Plus className="size-3.5 " />
@@ -248,7 +248,7 @@
 									{#if onRemove}
 										<div>
 											<button
-												class=" rounded-full p-1 hover:bg-gray-100 dark:hover:bg-gray-850 transition disabled:opacity-50 disabled:cursor-not-allowed"
+												class=" rounded-full p-1 hover:bg-gray-100 dark:hover:bg-gray-850 transition disabled:opacity-50 disabled:cursor-not-allowed snes-button"
 												type="button"
 												disabled={user.id === $_user?.id}
 												on:click={() => {

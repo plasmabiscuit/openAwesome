@@ -23,7 +23,7 @@
 				{$i18n.t('Access Control')}
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				on:click={() => {
 					show = false;
 				}}

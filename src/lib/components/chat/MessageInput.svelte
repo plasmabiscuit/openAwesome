@@ -969,7 +969,7 @@
 							class=" absolute -top-12 left-0 right-0 flex justify-center z-30 pointer-events-none"
 						>
 							<button
-								class=" bg-white border border-gray-100 dark:border-none dark:bg-white/20 p-1.5 rounded-full pointer-events-auto"
+								class=" bg-white border border-gray-100 dark:border-none dark:bg-white/20 p-1.5 rounded-full pointer-events-auto snes-button"
 								on:click={() => {
 									autoScroll = true;
 									scrollToBottom();
@@ -1053,7 +1053,7 @@
 					>
 						<button
 							id="generate-message-pair-button"
-							class="hidden"
+							class="hidden snes-button"
 							on:click={() => createMessagePair(prompt)}
 						/>
 
@@ -1079,7 +1079,7 @@
 										</div>
 										<div>
 											<button
-												class="flex items-center dark:text-gray-500"
+												class="flex items-center dark:text-gray-500 snes-button"
 												on:click={() => {
 													atSelectedModel = undefined;
 												}}
@@ -1132,7 +1132,7 @@
 														class=" bg-white text-black border border-white rounded-full {($settings?.highContrastMode ??
 														false)
 															? ''
-															: 'outline-hidden focus:outline-hidden group-hover:visible invisible transition'}"
+															: 'outline-hidden focus:outline-hidden group-hover:visible invisible transition'} snes-button"
 														type="button"
 														aria-label={$i18n.t('Remove file')}
 														on:click={() => {
@@ -1482,7 +1482,7 @@
 												<button
 													type="button"
 													id="model-valves-button"
-													class="bg-transparent hover:bg-gray-100 text-gray-700 dark:text-white dark:hover:bg-gray-800 rounded-full size-8 flex justify-center items-center outline-hidden focus:outline-hidden"
+													class="bg-transparent hover:bg-gray-100 text-gray-700 dark:text-white dark:hover:bg-gray-800 rounded-full size-8 flex justify-center items-center outline-hidden focus:outline-hidden snes-button"
 													on:click={() => {
 														selectedValvesType = 'function';
 														selectedValvesItemId = selectedModelIds[0]?.split('.')[0];
@@ -1503,7 +1503,7 @@
 												})}
 											>
 												<button
-													class="translate-y-[0.5px] px-1 flex gap-1 items-center text-gray-600 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200 rounded-lg self-center transition"
+													class="translate-y-[0.5px] px-1 flex gap-1 items-center text-gray-600 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200 rounded-lg self-center transition snes-button"
 													aria-label="Available Tools"
 													type="button"
 													on:click={() => {
@@ -1532,7 +1532,7 @@
 															filterId
 														)
 															? 'text-sky-500 dark:text-sky-300 bg-sky-50 hover:bg-sky-100 dark:bg-sky-400/10 dark:hover:bg-sky-600/10 border border-sky-200/40 dark:border-sky-500/20'
-															: 'bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 '} capitalize"
+															: 'bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 '} capitalize snes-button"
 													>
 														{#if filter?.icon}
 															<div class="size-4 items-center flex justify-center">
@@ -1564,7 +1564,7 @@
 													class="group p-[7px] flex gap-1.5 items-center text-sm rounded-full transition-colors duration-300 focus:outline-hidden max-w-full overflow-hidden {webSearchEnabled ||
 													($settings?.webSearch ?? false) === 'always'
 														? ' text-sky-500 dark:text-sky-300 bg-sky-50 hover:bg-sky-100 dark:bg-sky-400/10 dark:hover:bg-sky-600/10 border border-sky-200/40 dark:border-sky-500/20'
-														: 'bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 '}"
+														: 'bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 '} snes-button"
 												>
 													<GlobeAlt className="size-4" strokeWidth="1.75" />
 													<div class="hidden group-hover:block">
@@ -1582,7 +1582,7 @@
 													type="button"
 													class="group p-[7px] flex gap-1.5 items-center text-sm rounded-full transition-colors duration-300 focus:outline-hidden max-w-full overflow-hidden {imageGenerationEnabled
 														? ' text-sky-500 dark:text-sky-300 bg-sky-50 hover:bg-sky-100 dark:bg-sky-400/10 dark:hover:bg-sky-700/10 border border-sky-200/40 dark:border-sky-500/20'
-														: 'bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 '}"
+														: 'bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 '} snes-button"
 												>
 													<Photo className="size-4" strokeWidth="1.75" />
 													<div class="hidden group-hover:block">
@@ -1607,7 +1607,7 @@
 														: 'bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 '} {($settings?.highContrastMode ??
 													false)
 														? 'm-1'
-														: 'focus:outline-hidden rounded-full'}"
+														: 'focus:outline-hidden rounded-full'} snes-button"
 												>
 													<Terminal className="size-3.5" strokeWidth="2" />
 
@@ -1626,7 +1626,7 @@
 										<Tooltip content={$i18n.t('Dictate')}>
 											<button
 												id="voice-input-button"
-												class=" text-gray-600 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200 transition rounded-full p-1.5 mr-0.5 self-center"
+												class=" text-gray-600 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200 transition rounded-full p-1.5 mr-0.5 self-center snes-button"
 												type="button"
 												on:click={async () => {
 													try {
@@ -1675,7 +1675,7 @@
 										<div class=" flex items-center">
 											<Tooltip content={$i18n.t('Stop')}>
 												<button
-													class="bg-white hover:bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-800 transition rounded-full p-1.5"
+													class="bg-white hover:bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-800 transition rounded-full p-1.5 snes-button"
 													on:click={() => {
 														stopResponse();
 													}}
@@ -1700,7 +1700,7 @@
 											<!-- {$i18n.t('Call')} -->
 											<Tooltip content={$i18n.t('Voice mode')}>
 												<button
-													class=" bg-black text-white hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full p-1.5 self-center"
+													class=" bg-black text-white hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full p-1.5 self-center snes-button"
 													type="button"
 													on:click={async () => {
 														if (selectedModels.length > 1) {
@@ -1765,7 +1765,7 @@
 													id="send-message-button"
 													class="{!(prompt === '' && files.length === 0)
 														? 'bg-black text-white hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-100 '
-														: 'text-white bg-gray-200 dark:text-gray-900 dark:bg-gray-700 disabled'} transition rounded-full p-1.5 self-center"
+														: 'text-white bg-gray-200 dark:text-gray-900 dark:bg-gray-700 disabled'} transition rounded-full p-1.5 self-center snes-button"
 													type="submit"
 													disabled={prompt === '' && files.length === 0}
 												>

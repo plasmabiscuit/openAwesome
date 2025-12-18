@@ -202,7 +202,7 @@
 				<div>
 					<Tooltip content={$i18n.t('Add User')}>
 						<button
-							class=" p-2 rounded-xl hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 transition font-medium text-sm flex items-center space-x-1"
+							class=" p-2 rounded-xl hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-850 transition font-medium text-sm flex items-center space-x-1 snes-button"
 							on:click={() => {
 								showAddUserModal = !showAddUserModal;
 							}}
@@ -343,7 +343,7 @@
 					<tr class="bg-white dark:bg-gray-900 dark:border-gray-850 text-xs">
 						<td class="px-3 py-1 min-w-[7rem] w-28">
 							<button
-								class=" translate-y-0.5"
+								class=" translate-y-0.5 snes-button"
 								on:click={() => {
 									selectedUser = user;
 									showEditUserModal = !showEditUserModal;
@@ -394,7 +394,7 @@
 								{#if $config.features.enable_admin_chat_access && user.role !== 'admin'}
 									<Tooltip content={$i18n.t('Chats')}>
 										<button
-											class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+											class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 											on:click={async () => {
 												showUserChatsModal = !showUserChatsModal;
 												selectedUser = user;
@@ -407,7 +407,7 @@
 
 								<Tooltip content={$i18n.t('Edit User')}>
 									<button
-										class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+										class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 										on:click={async () => {
 											showEditUserModal = !showEditUserModal;
 											selectedUser = user;
@@ -433,7 +433,7 @@
 								{#if user.role !== 'admin'}
 									<Tooltip content={$i18n.t('Delete User')}>
 										<button
-											class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl"
+											class="self-center w-fit text-sm px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-xl snes-button"
 											on:click={async () => {
 												showDeleteConfirmDialog = true;
 												selectedUser = user;

@@ -262,7 +262,7 @@
 									<button
 										class="min-w-fit {selectedModelIdx == modelIdx
 											? ' dark:border-gray-300 '
-											: ' opacity-35 border-transparent'} pb-1.5 px-2.5 transition border-b-2"
+											: ' opacity-35 border-transparent'} pb-1.5 px-2.5 transition border-b-2 snes-button"
 										on:click={async () => {
 											if (selectedModelIdx != modelIdx) {
 												selectedModelIdx = modelIdx;
@@ -426,7 +426,7 @@
 									id="merge-response-button"
 									class="{true
 										? 'visible'
-										: 'invisible group-hover:visible'} p-1 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition"
+										: 'invisible group-hover:visible'} p-1 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition snes-button"
 									on:click={() => {
 										mergeResponsesHandler();
 									}}

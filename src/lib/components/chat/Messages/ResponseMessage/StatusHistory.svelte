@@ -30,7 +30,7 @@
 	{#if status?.hidden !== true}
 		<div class="text-sm flex flex-col w-full">
 			<button
-				class="w-full"
+				class="w-full snes-button"
 				on:click={() => {
 					showHistory = !showHistory;
 				}}

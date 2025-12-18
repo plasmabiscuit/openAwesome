@@ -54,7 +54,7 @@
 				<div class=" flex items-center self-center space-x-1.5">
 					<Tooltip content={$i18n.t('Unpin')} className="flex items-center">
 						<button
-							class=" self-center dark:hover:text-white transition"
+							class=" self-center dark:hover:text-white transition snes-button"
 							on:click={() => {
 								onUnpin();
 							}}

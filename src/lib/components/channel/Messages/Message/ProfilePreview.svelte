@@ -19,7 +19,7 @@
 	<LinkPreview.Trigger class="flex items-center">
 		<button
 			type="button"
-			class=" cursor-pointer no-underline! font-normal!"
+			class=" cursor-pointer no-underline! font-normal! snes-button"
 			on:click={() => {
 				openPreview = !openPreview;
 			}}

@@ -35,7 +35,7 @@
 				{$i18n.t('Code Editor')}
 			</div>
 			<button
-				class="self-center"
+				class="self-center snes-button"
 				aria-label="Close"
 				onclick={() => {
 					show = false;

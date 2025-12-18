@@ -337,7 +337,7 @@
 
 					<div class="flex items-center gap-2 p-1">
 						<button
-							class="text-xs"
+							class="text-xs snes-button"
 							aria-live="polite"
 							type="button"
 							on:click={() => {
@@ -362,7 +362,7 @@
 					<div class=" flex items-center gap-2 px-1 pb-1">
 						<button
 							type="button"
-							class="rounded-lg p-1 transition outline-gray-200 hover:bg-gray-100 dark:outline-gray-700 dark:hover:bg-gray-800"
+							class="rounded-lg p-1 transition outline-gray-200 hover:bg-gray-100 dark:outline-gray-700 dark:hover:bg-gray-800 snes-button"
 							on:click={() => {
 								textScale = Math.max(1, textScale);
 								setTextScaleHandler(textScale);
@@ -395,7 +395,7 @@
 
 						<button
 							type="button"
-							class="rounded-lg p-1 transition outline-gray-200 hover:bg-gray-100 dark:outline-gray-700 dark:hover:bg-gray-800"
+							class="rounded-lg p-1 transition outline-gray-200 hover:bg-gray-100 dark:outline-gray-700 dark:hover:bg-gray-800 snes-button"
 							on:click={() => {
 								textScale = Math.min(1.5, textScale);
 								setTextScaleHandler(textScale);
@@ -592,7 +592,7 @@
 
 					<button
 						aria-labelledby="chat-direction-label chat-direction-mode"
-						class="p-1 px-3 text-xs flex rounded-sm transition"
+						class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 						on:click={toggleChangeChatDirection}
 						type="button"
 					>
@@ -615,7 +615,7 @@
 
 					<button
 						aria-labelledby="landing-page-mode-label notification-sound-state"
-						class="p-1 px-3 text-xs flex rounded-sm transition"
+						class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 						on:click={() => {
 							toggleLandingPageMode();
 						}}
@@ -636,7 +636,7 @@
 
 					<button
 						aria-labelledby="chat-background-label background-image-url-state"
-						class="p-1 px-3 text-xs flex rounded-sm transition"
+						class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 						on:click={() => {
 							if (backgroundImageUrl !== null) {
 								backgroundImageUrl = null;
@@ -1007,7 +1007,7 @@
 					<div class="flex items-center gap-3 p-1">
 						{#if showFloatingActionButtons}
 							<button
-								class="text-xs text-gray-700 dark:text-gray-400 underline"
+								class="text-xs text-gray-700 dark:text-gray-400 underline snes-button"
 								type="button"
 								aria-label={$i18n.t('Open Modal To Manage Floating Quick Actions')}
 								on:click={() => {
@@ -1038,7 +1038,7 @@
 
 					<button
 						aria-labelledby="web-search-in-chat-label web-search-state"
-						class="p-1 px-3 text-xs flex rounded-sm transition"
+						class="p-1 px-3 text-xs flex rounded-sm transition snes-button"
 						on:click={() => {
 							toggleWebSearch();
 						}}
@@ -1061,7 +1061,7 @@
 
 					<button
 						aria-labelledby="enter-key-behavior-label"
-						class="p-1 px-3 text-xs flex rounded transition"
+						class="p-1 px-3 text-xs flex rounded transition snes-button"
 						on:click={() => {
 							togglectrlEnterToSend();
 						}}
@@ -1285,7 +1285,7 @@
 					<div class="flex items-center gap-3 p-1">
 						{#if imageCompression}
 							<button
-								class="text-xs text-gray-700 dark:text-gray-400 underline"
+								class="text-xs text-gray-700 dark:text-gray-400 underline snes-button"
 								type="button"
 								aria-label={$i18n.t('Open Modal To Manage Image Compression')}
 								on:click={() => {
@@ -1333,7 +1333,7 @@
 
 	<div class="flex justify-end text-sm font-medium">
 		<button
-			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			type="submit"
 		>
 			{$i18n.t('Save')}

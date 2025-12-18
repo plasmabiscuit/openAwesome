@@ -171,7 +171,7 @@
 	<div class=" absolute z-50 w-full flex justify-between dark:text-gray-100 px-4 py-3">
 		<div class="flex items-center gap-2.5">
 			<button
-				class="self-center p-0.5"
+				class="self-center p-0.5 snes-button"
 				on:click={() => {
 					showOverview.set(false);
 				}}
@@ -181,7 +181,7 @@
 			<div class=" text-lg font-medium self-center font-primary">{$i18n.t('Chat Overview')}</div>
 		</div>
 		<button
-			class="self-center p-0.5"
+			class="self-center p-0.5 snes-button"
 			on:click={() => {
 				onClose();
 				showOverview.set(false);

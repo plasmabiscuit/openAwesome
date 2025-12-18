@@ -246,7 +246,7 @@
 			<div class="flex justify-between items-center text-sm mt-2">
 				<div class="  font-medium">{$i18n.t('API keys')}</div>
 				<button
-					class=" text-xs font-medium text-gray-500"
+					class=" text-xs font-medium text-gray-500 snes-button"
 					type="button"
 					on:click={() => {
 						showAPIKeys = !showAPIKeys;
@@ -266,7 +266,7 @@
 								<SensitiveInput value={localStorage.token} readOnly={true} />
 
 								<button
-									class="ml-1.5 px-1.5 py-1 dark:hover:bg-gray-850 transition rounded-lg"
+									class="ml-1.5 px-1.5 py-1 dark:hover:bg-gray-850 transition rounded-lg snes-button"
 									on:click={() => {
 										copyToClipboard(localStorage.token);
 										JWTTokenCopied = true;
@@ -324,7 +324,7 @@
 									<SensitiveInput value={APIKey} readOnly={true} />
 
 									<button
-										class="ml-1.5 px-1.5 py-1 dark:hover:bg-gray-850 transition rounded-lg"
+										class="ml-1.5 px-1.5 py-1 dark:hover:bg-gray-850 transition rounded-lg snes-button"
 										on:click={() => {
 											copyToClipboard(APIKey);
 											APIKeyCopied = true;
@@ -369,7 +369,7 @@
 
 									<Tooltip content={$i18n.t('Create new key')}>
 										<button
-											class=" px-1.5 py-1 dark:hover:bg-gray-850transition rounded-lg"
+											class=" px-1.5 py-1 dark:hover:bg-gray-850transition rounded-lg snes-button"
 											on:click={() => {
 												createAPIKeyHandler();
 											}}
@@ -392,7 +392,7 @@
 									</Tooltip>
 								{:else}
 									<button
-										class="flex gap-1.5 items-center font-medium px-3.5 py-1.5 rounded-lg bg-gray-100/70 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-850 transition"
+										class="flex gap-1.5 items-center font-medium px-3.5 py-1.5 rounded-lg bg-gray-100/70 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-850 transition snes-button"
 										on:click={() => {
 											createAPIKeyHandler();
 										}}
@@ -412,7 +412,7 @@
 
 	<div class="flex justify-end pt-3 text-sm font-medium">
 		<button
-			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			on:click={async () => {
 				const res = await submitHandler();
 

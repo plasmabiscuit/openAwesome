@@ -127,7 +127,7 @@
 							<div>
 								<Tooltip content={$i18n.t('Add Arena Model')}>
 									<button
-										class="p-1"
+										class="p-1 snes-button"
 										type="button"
 										on:click={() => {
 											showAddModel = true;
@@ -176,7 +176,7 @@
 
 	<div class="flex justify-end pt-3 text-sm font-medium">
 		<button
-			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full"
+			class="px-3.5 py-1.5 text-sm font-medium bg-black hover:bg-gray-900 text-white dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full snes-button"
 			type="submit"
 		>
 			{$i18n.t('Save')}
